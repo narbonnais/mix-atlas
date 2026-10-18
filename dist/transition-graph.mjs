@@ -1,12 +1,12 @@
-import {t,count} from './i18n.mjs?v=013c303142ac';
-import {trackCopyButton} from "./copy-track.mjs?v=e24accac4595";
+import {t,count} from './i18n.mjs?v=d748e838fa62';
+import {trackCopyButton} from "./copy-track.mjs?v=522cda602a41";
 const esc=value=>String(value??'').replace(/[&<>"\']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const plur=(n,word)=>count(word==='DJ'?'players':'sets',n);
 export function drawGraph(box,song,incoming,outgoing,hits,onTrack){
  const max=Math.max(1,Math.min(3,Math.max(incoming.length,outgoing.length)));
  const height=Math.max(310,110+max*144);box.style.height=height+'px';
  const mid=height/2;
- let svg=`<svg viewBox="0 0 1000 ${height}" aria-hidden="true"><defs><marker id="arrow-before" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#a3a3a3"/></marker><marker id="arrow-after" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#a3a3a3"/></marker></defs><g class="connections"></g>`;
+ let svg=`<svg viewBox="0 0 1000 ${height}" aria-hidden="true"><defs><marker id="arrow-before" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="var(--graph-line)"/></marker><marker id="arrow-after" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="var(--graph-line)"/></marker></defs><g class="connections"></g>`;
  let nodes='';
  for(const [direction,edges] of [['before',incoming],['after',outgoing]]){
   const shown=edges.slice(0,3);
@@ -37,7 +37,7 @@ export function drawGraph(box,song,incoming,outgoing,hits,onTrack){
    const fromY=(before?r.top+r.height/2:center.top+center.height/2)-bounds.top;
    const toY=(before?center.top+center.height/2:r.top+r.height/2)-bounds.top;
    const mx=(fromX+toX)/2, direction=before?'before':'after';
-   paths.push(`<path d="M${fromX} ${fromY} C${mx} ${fromY} ${mx} ${toY} ${toX} ${toY}" stroke="${before?'#a3a3a3':'#a3a3a3'}" stroke-width="1.5" fill="none" marker-end="url(#arrow-${direction})"/>`);
+   paths.push(`<path d="M${fromX} ${fromY} C${mx} ${fromY} ${mx} ${toY} ${toX} ${toY}" stroke="var(--graph-line)" stroke-width="1.5" fill="none" marker-end="url(#arrow-${direction})"/>`);
   });
   box.querySelector('.connections').innerHTML=paths.join('');
  };

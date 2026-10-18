@@ -4,6 +4,7 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Discover tracks through DJ sets. Explore tracklists, find who played a track, and see what came before and after.">
   <meta name="theme-color" content="#ffffff"><title>Mix Atlas</title>
+  <script src="theme.js?v=8b3cb443773e"></script>
   <link rel="canonical" href="https://narbonnais.github.io/mix-atlas/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Mix Atlas">
@@ -14,12 +15,13 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Mix Atlas">
   <meta name="twitter:description" content="Discover tracks through DJ sets. Explore tracklists, find who played a track, and see what came before and after.">
-  <link rel="icon" href="icon.svg?v=f8cf39bea03d" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=903d18e8164c">
+  <link rel="icon" href="icon.svg?v=f8cf39bea03d" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=01ad8ebff4e9">
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="Aller au contenu">Skip to content</a>
   <header class="atlas-header">
     <a class="brand" href="#explorer" aria-label="Mix Atlas, home" data-i18n-aria-label="Mix Atlas, accueil">mix atlas<span class="brand-dot" aria-hidden="true"></span></a>
+    <button class="icon-button theme-button" id="theme-toggle" aria-label="Dark theme" data-i18n-aria-label="Thème sombre" title="Dark theme" data-i18n-title="Thème sombre" aria-pressed="false"><svg class="ui-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="M10 3.5a6.5 6.5 0 0 1 0 13Z" fill="currentColor" stroke="none"/></svg></button>
     <button class="icon-button language-button" id="language-button" aria-label="Language: English" title="Language: English" aria-haspopup="dialog" aria-controls="language-dialog"><img id="language-flag" class="language-flag" src="language-en.svg?v=97344d68ac2b" width="24" height="16" alt=""></button>
     <details class="tools-menu"><summary data-i18n="Outils">Tools</summary><div><button class="nav" id="open-collection" data-i18n="Tous les sets">All sets</button><button class="nav" id="open-compare" data-i18n="Comparer deux sets">Compare two sets</button><button class="nav" id="open-data" data-i18n="Importer / exporter">Import / export</button></div></details>
   </header>
@@ -49,5 +51,5 @@
     <div class="dialog-note"><strong data-i18n="Les IDs et les versions sont conservés.">IDs and versions are preserved.</strong> <span data-i18n="import.note">Existing sources will be updated. Suggested but unconfirmed identifications on 1001Tracklists do not create links.</span><br><span data-i18n="Les ajouts sont enregistrés uniquement dans ce navigateur.">Additions are saved only in this browser.</span></div>
     <button class="text-button" id="export"><span data-i18n="Exporter toute ma collection">Export my collection</span> <svg class="ui-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v13m-5-5 5 5 5-5"/></svg></button>
   </dialog>
-  <script type="module" src="app.mjs?v=2516819cab86"></script>
+  <script type="module" src="app.mjs?v=c7baacf6d7a1"></script>
 </body></html>

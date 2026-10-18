@@ -46,7 +46,7 @@ A quiet music browser. The user explicitly rejected the former green/lime interf
 
 ## Colors
 
-Pure white is the main canvas. Ink is the primary foreground and primary button. Secondary and muted greys carry artist names and dates. The selected list row and current track receive a light neutral fill. Source dividers stay quiet; controls use distinct borders and a dark focus outline. Graph arrows and before/after labels are neutral; the selected graph node is black with white text. Do not reintroduce the discarded green, lime or lavender palette.
+Light mode uses pure white as the main canvas. Ink is the primary foreground and primary button. Secondary and muted greys carry artist names and dates. The selected list row and current track receive a light neutral fill. Source dividers stay quiet; controls use distinct borders and a dark focus outline. Graph arrows and before/after labels are neutral; the selected graph node is black with white text. Do not reintroduce the discarded green, lime or lavender palette.
 
 ## Typography
 
@@ -54,7 +54,7 @@ Use DM Sans only: headings30px/600, detail25px/600, music titles15–16px/500, c
 
 ## Layout
 
-One common workspace replaces the former navigation rail and task pages. A white header contains only the atlas wordmark, small language flag and Tools. Desktop uses a searchable result column up to340px and one adjacent detail panel separated by a hairline. The global search defaults to all collected sets, tracks and credited DJ groups, including independent collections; All / Tracks / DJs / Sets are filters of that same list. Do not show scope/relation selectors tied to a starting DJ. The result-type tabs filter the same global collection; the filter disclosure contains sorting only. Do not recreate separate task screens.
+One common workspace replaces the former navigation rail and task pages. The neutral header contains only the atlas wordmark, a compact appearance button, small language flag and Tools. Desktop uses a searchable result column up to340px and one adjacent detail panel separated by a hairline. The global search defaults to all collected sets, tracks and credited DJ groups, including independent collections; All / Tracks / DJs / Sets are filters of that same list. Do not show scope/relation selectors tied to a starting DJ. The result-type tabs filter the same global collection; the filter disclosure contains sorting only. Do not recreate separate task screens.
 
 The detail always leads with the selected song. A DJ filter appears only when several documented DJ groups are available; otherwise the DJ is metadata. A source selector precedes the complete collected tracklist. The exact selected occurrence is highlighted and centered automatically. Identified track rows can be followed without leaving the workspace, retaining their source context. Transitions expand below the list. Comparison is an inline secondary section using the same tracklist renderer.
 
@@ -88,3 +88,9 @@ Controls and selected rows have restrained8px corners. Source-dialog corners are
 
 ## Languages
 English is the default. A 44px borderless header button shows a 24×16px active-language flag. It opens a compact native dialog with English, Français and 한국어, a selected check and a close button; Escape dismisses it and focus returns to the flag. The selected preference is retained locally. Use the same neutral tokens and components in all languages. Native Hangul fallbacks supplement DM Sans; keep Korean words together and allow long content to wrap. The header stays on one row on narrow phones. The flag remains a44px target; the redundant starting-DJ dropdown is removed. Changing language retains the active pane, search, source selection and expanded disclosures. Dates and counts follow the chosen locale; published music names remain unchanged.
+
+## Appearance
+
+Light and dark modes share the same neutral identity, layout and typography. The dark canvas is #171717, elevated dialogs/popovers #202020, raised controls #252525 and selected rows #2c2c2c. Primary text is #f2f2f2, secondary #c1c1c1 and muted #a3a3a3. Dark control borders #787878 and focus #dedede remain distinct. Strong actions and the selected graph node invert to light surfaces with dark text. Component colours use shared semantic CSS tokens; graph lines and arrowheads use the same --graph-line token.
+
+The 44px half-filled circle button beside the language flag toggles dark mode. Its translated accessible name is Dark theme, with aria-pressed indicating the active state. First paint follows the device setting unless the visitor saved an explicit choice. Save that choice separately as mix-atlas-theme, update the browser theme colour and native colour scheme, and synchronize appearance between tabs. Device changes apply until an explicit choice is made. Switch in place without remounting music, graph, comparison or language views; keyboard focus and the selected source stay intact. No theme-transition animation is needed.

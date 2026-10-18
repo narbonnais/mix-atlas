@@ -3,6 +3,7 @@ export const LANGUAGES={en:'English',fr:'Français',ko:'한국어'};
 const locales={en:'en-US',fr:'fr-FR',ko:'ko-KR'};
 // Existing French copy is the message key; optional fourth column overrides it.
 const entries=[
+ ['Thème sombre','Dark theme','다크 테마'],
  ['Productions de {dj}','{dj} productions','{dj}의 곡'],
  ['Sélections de {dj}','{dj} selections','{dj} 선곡'],
  ['Qui jouent les morceaux de {dj}',"Playing {dj}’s tracks",'{dj}의 곡을 튼 DJ'],

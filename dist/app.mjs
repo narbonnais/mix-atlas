@@ -1,9 +1,9 @@
-import {t,count,LANGUAGES,getLanguage,readLanguage,setLanguage,applyTranslations,translateError} from './i18n.mjs?v=013c303142ac';
-import {installTrackCopy} from './copy-track.mjs?v=e24accac4595';
+import {t,count,LANGUAGES,getLanguage,readLanguage,setLanguage,applyTranslations,translateError} from './i18n.mjs?v=d748e838fa62';
+import {installTrackCopy} from './copy-track.mjs?v=522cda602a41';
 import {SEED} from './data.mjs?v=dddc305e0306';
 import {parseWorkspaceRoute,formatWorkspaceRoute} from './route.mjs?v=a50bb487b14c';
-import {mountWorkspace} from './workspace-view.mjs?v=64dd8c29f259';
-import {mountComparison} from './comparison-view.mjs?v=5a58673aff20';
+import {mountWorkspace} from './workspace-view.mjs?v=9cecccbc92ba';
+import {mountComparison} from './comparison-view.mjs?v=7edacc65b14e';
 import {validateDataset,mergeDatasets,restoreCollection,parseTracklist} from './core.mjs?v=f639e478edea';
 const $=id=>document.getElementById(id);
 let languageStorage;try{languageStorage=localStorage;}catch{}
