@@ -37,3 +37,9 @@ The public brand is Mix Atlas in the header, browser title, accessibility labels
 Removed producer-specific scope/relation dropdowns and their related filter controls from the public interface. All / Tracks / DJs / Sets now partition the same collection. DJ search includes the full documented repertoire; matching passages stay focused on the query. Collective credits remain collective. DJ rows show a concise track count. Import forms and templates no longer preselect Jeremy Olander.
 
 53 JavaScript tests pass, including global tab parity and query-focused DJ passages. Desktop1440px and mobile325px checked: no overflow, no removed-control references or browser errors. Korean keeps the Mix Atlas title and matching localized description metadata. Static design scan has no primary findings; existing focus, contrast and reduced-motion rules remain. Physical-device and full screen-reader testing remain outside this bounded follow-up.
+
+## Cross-discussion data reconciliation
+
+Reconciled the older collection checkout against the public repository by source URL. The older dataset had397 sets and the public release had386. Eleven sources were missing: five Layer J sources and six CVMRN sources. Existing Layer J Spybar was refreshed once; all other existing sources and metadata were unchanged, apart from the added artist collection coverage. Only verified dataset/collector/test additions were merged; the current public interface and Mix Atlas branding were retained.
+
+The bundled collection now has397 sets,2,770 identified tracks and4,083 distinct transitions. Recent guest radio sources retain explicit CVMRN performer scope, unknowns, overlays, boundaries, separate performance/publication dates and safe source/audio links.55 JavaScript and3 Python tests pass. Recent-source builders, parsed data, coverage and regression tests are included for future maintenance.

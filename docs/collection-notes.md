@@ -150,3 +150,23 @@ python3 -m unittest discover -s tests -p 'test_annual_collector.py'
 La reconstruction complète avec `build_1001.py` accepte `--additional collector/annual-dataset.json` après les collections Mattheis et Fahlberg ; ce fichier actualise les sources déjà présentes. Le chargement du navigateur rétablit les sources officielles actuelles et conserve les sources personnelles et les enregistrements personnels. Les producteurs disposant de sets importés sont proposés dans le sélecteur de DJ existant.
 
 Bilan : 141 nouvelles tracklists, 3724 nouvelles entrées ; 386 sources, 2698 morceaux identifiés distincts et 3996 transitions distinctes au total. Les 43 profils ont été vérifiés sur la période ; aucune des 144 sources 1001 répertoriées dans cette fenêtre ne reste en attente. Quatre sources supplémentaires Ryan Elliott proviennent de MixesDB.
+
+
+## Layer J et CVMRN — collecte du 18 octobre 2026
+
+Période : 18 octobre 2025 au 18 octobre 2026 inclus. La première page de Layer J comporte les six sources récentes puis des sources plus anciennes ; les 20 sources historiques ne sont pas toutes importées. Le profil CVMRN comporte sept sources, dont six dans la période ; Asbury Park (2020) reste hors périmètre. Les deux fenêtres sont complètes au regard de ces index publics.
+
+Cinq nouveaux sets Layer J ont été ajoutés : Layershow 011, COSmix 014, Layershow 010, Layershow 009 et COSmix 005. Spybar était déjà présent et a été actualisé sans doublon. Les performances Layershow conservent leur date d’événement et leur date de publication séparément. Six sources CVMRN sont ajoutées : Anjunakitchen, Enhanced Sessions 858 et 839, SILO Dallas, Ultra Miami et Group Therapy 657. Dans les trois émissions à plusieurs DJs, seules les lignes explicitement attribuées à CVMRN sont importées ; les choix des animateurs ne lui sont pas affectés. Le lien source conserve l’accès à l’émission complète. Les lecteurs non instanciés dans les pages restent absents plutôt que d’inventer une URL audio.
+
+Les deux collections comptent 199 entrées (121 Layer J, 78 CVMRN), IDs et superpositions compris. Onze nouvelles sources au total ; les imports personnels restent conservés.
+
+Reconstruction depuis les snapshots inclus dans l’archive source :
+
+```sh
+python3 collector/build_recent_djs.py collector/recent-djs-snapshots
+node --test tests/*.test.mjs
+```
+
+La reconstruction globale via `build_1001.py` accepte `--additional collector/recent-djs-dataset.json` en dernier, après la collection annuelle. Le fichier remplace les sources reconnues sans augmenter leur nombre.
+
+Après cet ajout : 397 sources, 2770 morceaux identifiés distincts et 4083 transitions distinctes.

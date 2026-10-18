@@ -1,0 +1,22 @@
+{
+  "collectedOn": "2026-10-18",
+  "from": "2025-10-18",
+  "through": "2026-10-18",
+  "newSets": 11,
+  "artists": [
+    {
+      "dj": "Layer J",
+      "sets": 6,
+      "entries": 121,
+      "tracks": 64,
+      "transitions": 69
+    },
+    {
+      "dj": "CVMRN",
+      "sets": 6,
+      "entries": 78,
+      "tracks": 47,
+      "transitions": 47
+    }
+  ]
+}

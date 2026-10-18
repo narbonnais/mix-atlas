@@ -1,5 +1,5 @@
 const views=new Set(['explorer','discover','sets','compare','peers']);
-export const FOCUS_DJS = ["Jeremy Olander", "Mattheis", "Fahlberg", "Aera", "Agustin Giri", "Applescal", "Arno Cost", "Axwell", "Butch", "Eric Prydz", "Guy J", "Jerry Ropero", "M-High", "Martinou", "Nuno Dos Santos", "OLING", "Pig&Dan", "Priori", "Pryda", "Ryan Elliott", "Sebra Cruz", "Sébastien Léger", "Tim Engelhardt"];
+export const FOCUS_DJS = ["Jeremy Olander", "Mattheis", "Fahlberg", "Aera", "Agustin Giri", "Applescal", "Arno Cost", "Axwell", "Butch", "Eric Prydz", "Guy J", "Jerry Ropero", "M-High", "Martinou", "Nuno Dos Santos", "OLING", "Pig&Dan", "Priori", "Pryda", "Ryan Elliott", "Sebra Cruz", "Sébastien Léger", "Tim Engelhardt", "Layer J", "CVMRN"];
 export function parseRoute(hash=''){
  const [name,query]=hash.replace(/^#/,'').split('?'),params=new URLSearchParams(query);
  return {view:views.has(name)?name:'explorer',mode:params.get('mode')==='external'?'external':'supporters',dj:FOCUS_DJS.includes(params.get('dj'))?params.get('dj'):'Jeremy Olander',track:params.get('track')||null,expanded:params.get('linked')==='1'};

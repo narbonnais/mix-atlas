@@ -18,10 +18,10 @@
     "sampleComplete": true,
     "collectedOn": "2026-10-18"
   },
-  "sets": 386,
-  "tracks": 2698,
-  "transitions": 3996,
-  "entries": 8733,
+  "sets": 397,
+  "tracks": 2770,
+  "transitions": 4083,
+  "entries": 8896,
   "recordingsWithoutTracklist": 2,
   "mattheis": {
     "sets": 4,
@@ -36,7 +36,7 @@
     "groupsWithReworks": 26,
     "otherProducersTracks": 602
   },
-  "excludedOtherDjRows": 325,
+  "excludedOtherDjRows": 376,
   "fahlberg": {
     "dj": "Fahlberg",
     "profileUrl": "https://www.1001tracklists.com/artist/fahlberg/tracklists.html",
@@ -383,5 +383,27 @@
     ],
     "newSets": 141,
     "newEntries": 3724
+  },
+  "recentDjs": {
+    "collectedOn": "2026-10-18",
+    "from": "2025-10-18",
+    "through": "2026-10-18",
+    "newSets": 11,
+    "artists": [
+      {
+        "dj": "Layer J",
+        "sets": 6,
+        "entries": 121,
+        "tracks": 64,
+        "transitions": 69
+      },
+      {
+        "dj": "CVMRN",
+        "sets": 6,
+        "entries": 78,
+        "tracks": 47,
+        "transitions": 47
+      }
+    ]
   }
 }
