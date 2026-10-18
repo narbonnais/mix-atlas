@@ -18,10 +18,10 @@
     "sampleComplete": true,
     "collectedOn": "2026-10-18"
   },
-  "sets": 397,
-  "tracks": 2770,
-  "transitions": 4083,
-  "entries": 8896,
+  "sets": 436,
+  "tracks": 3316,
+  "transitions": 4679,
+  "entries": 9607,
   "recordingsWithoutTracklist": 2,
   "mattheis": {
     "sets": 4,
@@ -405,5 +405,70 @@
         "transitions": 47
       }
     ]
+  },
+  "howellsStereodrama": {
+    "collectedOn": "2026-10-18",
+    "danny": {
+      "artist": "Danny Howells",
+      "profileUrl": "https://www.1001tracklists.com/artist/danny-howells/tracklists.html",
+      "from": "2025-01-01",
+      "through": "2026-10-18",
+      "advertisedCount": 96,
+      "windowComplete": true,
+      "sources": [
+        "https://www.1001tracklists.com/tracklist/1pqf8hu1/danny-howells-balance-croatia-026-2026-07-14.html",
+        "https://www.1001tracklists.com/tracklist/jfnkg91/danny-howells-selador-sessions-358-2026-03-19.html",
+        "https://www.1001tracklists.com/tracklist/18mh6g7t/danny-howells-hartstocht-festival-netherlands-2025-09-06.html",
+        "https://www.1001tracklists.com/tracklist/kb6ygu9/danny-howells-balance-croatia-festival-croatia-2025-08-10.html",
+        "https://www.1001tracklists.com/tracklist/pyv810k/danny-howells-bloop-london-radio-urban-soundscapes-2025-06-24.html",
+        "https://www.1001tracklists.com/tracklist/vkfycm9/john-digweed-danny-howells-transitions-1081-2025-05-16.html",
+        "https://www.1001tracklists.com/tracklist/1g5ch3zk/danny-howells-house-of-rekids-mix-20-2025-04-24.html",
+        "https://www.1001tracklists.com/tracklist/2nbxt4gk/danny-howells-selador-sessions-303-2025-02-28.html",
+        "https://www.1001tracklists.com/tracklist/2q7ty6jk/danny-howells-belu-clavero-ad-sidera-semper-festival-panama-2025-02-15.html",
+        "https://www.1001tracklists.com/tracklist/2czyz7k9/danny-howells-ad-sidera-sunsets-panama-2025-02-15.html"
+      ]
+    },
+    "track": {
+      "artist": "Danny Howells",
+      "title": "Stereodrama (Aubrey Fry & Nick Stoynoff Remix)",
+      "trackId": "1001:vdg8l3mp",
+      "profileUrl": "https://www.1001tracklists.com/track/vdg8l3mp/danny-howells-stereodrama-aubrey-fry-nick-stoynoff-remix/index.html",
+      "advertisedPlays": 29,
+      "indexComplete": true,
+      "sources": [
+        "https://www.1001tracklists.com/tracklist/1g7xjbu9/kardashin-digital-emotions-925-2026-07-01.html",
+        "https://www.1001tracklists.com/tracklist/24lbz2l1/steve-parry-golden-wings-music-radio-selections-best-tracks-2025-2026-02-11.html",
+        "https://www.1001tracklists.com/tracklist/15uygdy1/ignace-paepe-taboe-dj-contest-2026-02-05.html",
+        "https://www.1001tracklists.com/tracklist/14wwx2st/nick-stoynoff-selador-sessions-349-2026-01-15.html",
+        "https://www.1001tracklists.com/tracklist/24l328r1/lee-jordan-pfg-nye-guest-mix-2025-12-31.html",
+        "https://www.1001tracklists.com/tracklist/2ndhhutk/dave-seaman-global-underground-halo-nightclub-cape-town-south-africa-2025-10-18.html",
+        "https://www.1001tracklists.com/tracklist/295z1mm1/andrew-h-rhythmic-layers-011-2025-06-24.html",
+        "https://www.1001tracklists.com/tracklist/2kl3t1jk/weird-sounding-dude-sinetone-054-2025-06-10.html",
+        "https://www.1001tracklists.com/tracklist/1302n0n9/seba-benedetti-matias-marco-raffo-jm-vibesessions-024-2025-06-07.html",
+        "https://www.1001tracklists.com/tracklist/qwhg1c9/anthony-pappa-invite-only-opening-australia-2025-05-24.html",
+        "https://www.1001tracklists.com/tracklist/2gslgfx1/nila-simulation-2025-05-18.html",
+        "https://www.1001tracklists.com/tracklist/2uvt57s1/dj-beat2-origin-2025-04-10.html",
+        "https://www.1001tracklists.com/tracklist/2c14fb7k/mallinder-migrating-birds-009-2025-04-09.html",
+        "https://www.1001tracklists.com/tracklist/hfs76p9/ice-upon-fire-hybrid-theory-079-warmup-2025-04-04.html",
+        "https://www.1001tracklists.com/tracklist/2fugqvq9/noe-bortolussi-parlagreco-galactica-121-2025-03-25.html",
+        "https://www.1001tracklists.com/tracklist/2txw9031/lee-jordan-affiliate-2025-03-24.html",
+        "https://www.1001tracklists.com/tracklist/1rh671bt/northern-angel-tech-progressive-house-session-part-iv-2025-03-24.html",
+        "https://www.1001tracklists.com/tracklist/rtx6fmk/luke-brancaccio-essa-a-drug-called-music-2025-03-23.html",
+        "https://www.1001tracklists.com/tracklist/1rh61gn1/sultan-plus-shepard-dialekt-radio-274-2025-03-23.html",
+        "https://www.1001tracklists.com/tracklist/9uv3pz1/makotrax-were-coming-back-2025-03-18.html",
+        "https://www.1001tracklists.com/tracklist/2s27s421/lee-jordan-matt-black-housefeelings-2025-03-18.html",
+        "https://www.1001tracklists.com/tracklist/vk20zj1/paul-thomas-uv-radio-show-385-2025-03-13.html",
+        "https://www.1001tracklists.com/tracklist/113w1k6k/aubrey-fry-selador-sessions-305-2025-03-13.html",
+        "https://www.1001tracklists.com/tracklist/vk1qpfk/bjorn-fogelberg-selection-034-2025-03-12.html",
+        "https://www.1001tracklists.com/tracklist/1rh4q5vk/anthony-pappa-black-label-series-046-2025-03-11.html",
+        "https://www.1001tracklists.com/tracklist/1f7932c9/the-journey-ugenius-radio-111-2025-03-09.html",
+        "https://www.1001tracklists.com/tracklist/15svn53k/unwa-unwa-selected-184-2025-03-09.html",
+        "https://www.1001tracklists.com/tracklist/hflu6k1/dave-seaman-selador-sessions-304-radio-therapy-2025-03-05.html",
+        "https://www.1001tracklists.com/tracklist/2hpy8nx1/gai-barone-patterns-639-2025-03-05.html"
+      ]
+    },
+    "importedSources": 39,
+    "entries": 711,
+    "pendingSources": []
   }
 }

@@ -170,3 +170,24 @@ node --test tests/*.test.mjs
 La reconstruction globale via `build_1001.py` accepte `--additional collector/recent-djs-dataset.json` en dernier, après la collection annuelle. Le fichier remplace les sources reconnues sans augmenter leur nombre.
 
 Après cet ajout : 397 sources, 2770 morceaux identifiés distincts et 4083 transitions distinctes.
+
+## Danny Howells et Stereodrama — 18 octobre 2026
+
+39 nouvelles sources publiques 1001Tracklists ont été ajoutées (711 entrées, IDs et superpositions compris). Dix sources Danny Howells datées du 1 janvier 2025 au 18 octobre 2026 : Balance Croatia 026, Selador Sessions 358 et 303, Hartstocht Festival, Balance Croatia Festival, Bloop London Urban Soundscapes, Transitions 1081, House Of Rekids Mix 20, Ad Sidera Semper avec Belu Clavero et Ad Sidera Sunsets. Ce périmètre récent est complet dans l’index consulté ; les 96 sources historiques de Danny Howells ne sont pas toutes importées.
+
+Les 29 sources répertoriées pour **Stereodrama (Aubrey Fry & Nick Stoynoff Remix)** ont toutes été récupérées, du 5 mars 2025 au 1 juillet 2026. Identité conservée : `1001:vdg8l3mp`. La version originale et le remix DCLVIII OFC ne sont pas assimilés à cette version. Les 29 listes sont importées en entier : on peut vérifier les voisins, les IDs et les frontières de sections. Le répertoire comprend notamment Dave Seaman, Anthony Pappa, Nick Stoynoff, Gai Barone, Aubrey Fry, Steve Parry, Paul Thomas et Sultan + Shepard. Un crédit collectif reste collectif ; la présence sur une émission ne prouve pas qu’un animateur a choisi chaque morceau.
+
+La source Transitions 1081 conserve les 21 entrées du programme : dix pour John Digweed puis onze pour Danny Howells, avec une rupture entre les deux. La session Danny Howells & Belu Clavero reste créditée au duo. Les lecteurs non chargés lors de la capture ne reçoivent pas de lien audio inventé ; le lien 1001 permet de retrouver l’enregistrement.
+
+Le catalogue public passe à **436 tracklists, 3 316 identités de morceaux et 4 679 transitions distinctes**, avec 9 607 entrées. Les URLs des anciennes collections exportées et du dépôt Sites archivé ont été comparées au catalogue public : aucune source antérieure ne manque. L’interface publique actuelle est conservée ; aucun ancien fichier UI n’a été copié depuis Sites.
+
+Les métadonnées de couverture et les sources exactes sont dans `collector/howells-stereodrama-coverage.json`, le lot normalisé dans `collector/howells-stereodrama-dataset.json`. Les snapshots bruts sont conservés dans le workspace local `work/howells-stereodrama-collection/`, hors du dépôt public. Pour reconstruire le lot avec ces snapshots puis le publier :
+
+```sh
+python3 collector/build_howells_stereodrama.py /chemin/vers/howells-stereodrama-collection
+npm run import-setlists -- collector/howells-stereodrama-dataset.json
+npm run prepare-site
+npm test
+```
+
+Les sources décrivent des tracklists publiées, pas tous les enregistrements possibles sur Internet. La collecte utilise le DOM du navigateur et s’arrête devant toute vérification humaine. Aucun audio n’est hébergé.

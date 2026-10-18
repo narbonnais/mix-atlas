@@ -2,7 +2,7 @@
 
 Explore music through published DJ tracklists: find who played a track, see its full set in order, and inspect the tracks before and after it. All / Tracks / DJs / Sets filter the same global collection. Includes search, copy artist/title, source and listening links, transition graphs, set comparison, and English (default), French and Korean.
 
-The current bundled collection contains **397 tracklists, 2,770 identified track identities, 4,083 distinct transitions and 2 recordings awaiting tracklists**. It starts with Jeremy Olander and includes supporting DJs, Mattheis, Fahlberg, Layer J, CVMRN, and producers played by Olander. These are collected sources, not a complete record of every performance. Details: [collection notes](docs/collection-notes.md).
+The current bundled collection contains **436 tracklists, 3,316 identified track identities, 4,679 distinct transitions and 2 recordings awaiting tracklists**. It starts with Jeremy Olander and includes supporting DJs, Mattheis, Fahlberg, Layer J, CVMRN, Danny Howells, and producers played by Olander. These are collected sources, not a complete record of every performance. Details: [collection notes](docs/collection-notes.md).
 
 ## Run locally
 

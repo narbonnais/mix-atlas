@@ -1,6 +1,6 @@
 import {t,count,LANGUAGES,getLanguage,readLanguage,setLanguage,applyTranslations,translateError} from './i18n.mjs?v=013c303142ac';
 import {installTrackCopy} from './copy-track.mjs?v=e24accac4595';
-import {SEED} from './data.mjs?v=5db256b95d14';
+import {SEED} from './data.mjs?v=dddc305e0306';
 import {parseWorkspaceRoute,formatWorkspaceRoute} from './route.mjs?v=a50bb487b14c';
 import {mountWorkspace} from './workspace-view.mjs?v=64dd8c29f259';
 import {mountComparison} from './comparison-view.mjs?v=5a58673aff20';
