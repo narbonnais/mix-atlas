@@ -1,6 +1,6 @@
 # Mix Atlas
 
-Explore music through published DJ tracklists: find who played a track, see its full set in order, and inspect the tracks before and after it. Includes search, copy artist/title, source and listening links, transition graphs, set comparison, and English (default), French and Korean.
+Explore music through published DJ tracklists: find who played a track, see its full set in order, and inspect the tracks before and after it. All / Tracks / DJs / Sets filter the same global collection. Includes search, copy artist/title, source and listening links, transition graphs, set comparison, and English (default), French and Korean.
 
 The current bundled collection contains **386 tracklists, 2,698 identified track identities, 3,996 distinct transitions and 2 recordings awaiting tracklists**. It starts with Jeremy Olander and includes supporting DJs, Mattheis, Fahlberg, and producers played by Olander. These are collected sources, not a complete record of every performance. Details: [collection notes](docs/collection-notes.md).
 

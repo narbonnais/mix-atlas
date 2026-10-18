@@ -38,7 +38,7 @@
     <div class="dialog-tabs"><button id="paste-tab" class="active" data-i18n="Coller une tracklist">Paste a tracklist</button><button id="json-tab" data-i18n="Importer un fichier">Import a file</button></div>
     <form id="paste-form">
       <label><span data-i18n="Titre du set">Set title</span><input name="setTitle" required placeholder="Set or event name" data-i18n-placeholder="Nom du set ou de l’événement" maxlength="400"></label>
-      <div class="form-row"><label><span data-i18n="DJs">DJs</span><input name="djs" required value="Jeremy Olander" placeholder="Separate DJs with a comma" data-i18n-placeholder="Séparer les DJs par une virgule"></label><label><span data-i18n="Date indiquée par la source">Source date</span><input name="date" type="date"></label></div>
+      <div class="form-row"><label><span data-i18n="DJs">DJs</span><input name="djs" required placeholder="Separate DJs with a comma" data-i18n-placeholder="Séparer les DJs par une virgule"></label><label><span data-i18n="Date indiquée par la source">Source date</span><input name="date" type="date"></label></div>
       <label><span data-i18n="Lien de la tracklist">Tracklist URL</span><input name="sourceUrl" type="url" required placeholder="https://…"></label>
       <label><span data-i18n="Lien d’écoute">Listening URL</span> <span class="optional" data-i18n="facultatif">optional</span><input name="mediaUrl" type="url" placeholder="https://www.youtube.com/watch?v=…"></label>
       <label><span data-i18n="Tracklist dans l’ordre">Tracklist in order</span><textarea name="tracklist" rows="7" required data-i18n-placeholder="import.example" placeholder="01. 00:00 Artist - Track&#10;02. 05:30 Artist - Track (Remix)&#10;03. 10:15 ID - ID&#10;w/ 11:00 Artist - Vocal"></textarea></label>
@@ -49,5 +49,5 @@
     <div class="dialog-note"><strong data-i18n="Les IDs et les versions sont conservés.">IDs and versions are preserved.</strong> <span data-i18n="import.note">Existing sources will be updated. Suggested but unconfirmed identifications on 1001Tracklists do not create links.</span><br><span data-i18n="Les ajouts sont enregistrés uniquement dans ce navigateur.">Additions are saved only in this browser.</span></div>
     <button class="text-button" id="export"><span data-i18n="Exporter toute ma collection">Export my collection</span> <svg class="ui-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v13m-5-5 5 5 5-5"/></svg></button>
   </dialog>
-  <script type="module" src="app.mjs?v=3c12553af382"></script>
+  <script type="module" src="app.mjs?v=f5999e84cfe6"></script>
 </body></html>

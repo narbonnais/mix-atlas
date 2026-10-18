@@ -29,3 +29,11 @@ Reviewed on 18 October 2026. This document records the local review before the f
 At the time of the local review, GitHub Actions and the public HTTPS deployment had not run. Their subsequent results are available in the repository’s Actions tab. Local checks used Node25.6.1 and Python3.13.5; the workflow pins Node24. Full assistive-technology and physical phone testing were not performed. External listening/source destinations were checked as links, not all played or audited. Raw collection snapshots are not included; publishing the bundled dataset does not require them.
 
 Browser imports and language preferences are specific to each browser and website origin. Export local additions before moving from localhost or the previous host to GitHub Pages. Visitor imports do not edit the public dataset. The collection remains a dated source snapshot; source ordering, missing IDs and public tracklist accuracy require listening/source verification.
+
+## Follow-up: Mix Atlas branding and global tabs
+
+The public brand is Mix Atlas in the header, browser title, accessibility labels, link previews, translated descriptions and export filenames. Artist names remain factual source credits. Existing browser storage keys are retained for compatibility.
+
+Removed producer-specific scope/relation dropdowns and their related filter controls from the public interface. All / Tracks / DJs / Sets now partition the same collection. DJ search includes the full documented repertoire; matching passages stay focused on the query. Collective credits remain collective. DJ rows show a concise track count. Import forms and templates no longer preselect Jeremy Olander.
+
+53 JavaScript tests pass, including global tab parity and query-focused DJ passages. Desktop1440px and mobile325px checked: no overflow, no removed-control references or browser errors. Korean keeps the Mix Atlas title and matching localized description metadata. Static design scan has no primary findings; existing focus, contrast and reduced-motion rules remain. Physical-device and full screen-reader testing remain outside this bounded follow-up.

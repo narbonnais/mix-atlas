@@ -24,6 +24,7 @@ export function workspaceItems(data,dj,state){
  const {type='all',scope='all',expanded=true,reworks=false,joint=false,relation='supporters'}=state;
  if(type==='all')return [...workspaceItems(data,dj,{...state,type:'tracks',scope:'all',allSources:true}),...collectionDjs(data),...workspaceItems(data,dj,{...state,type:'sets',allSources:true})];
  if(type==='djs'){
+  if(state.allSources)return collectionDjs(data);
   if(relation==='shared')return sharedRepertoire(data,dj).map(peer=>({
    id:peer.dj,title:peer.dj,artist:peer.shared.map(t=>t.title).join(' · ')||'',kind:'dj',shared:true,
    setCount:peer.independentSets.size+peer.b2bSets.size,tracks:peer.shared,
@@ -59,7 +60,9 @@ export function workspaceEvidence(data,dj,item,state){
      const players=entry.performers?.length?entry.performers:set.djs;
      return !unresolved(entry)&&players.length===item.performers.length&&players.every(player=>item.performers.some(dj=>norm(dj)===norm(player)));
     });
-    const entry=entries.find(entry=>trackKey(entry)===state.track)??entries[0];
+    const query=searchable(state.query),matchesDj=!query||searchable(item.title).includes(query);
+    const matching=matchesDj?entries:entries.filter(entry=>searchable(entry.artist+' '+entry.title).includes(query));
+    const entry=matching.find(entry=>trackKey(entry)===state.track)??matching[0];
     if(!entry)return [];
     return occurrences([set],trackKey(entry)).filter(hit=>hit.entry===entry);
    }).sort((a,b)=>(b.set.date??'').localeCompare(a.set.date??''));
@@ -70,7 +73,7 @@ export function workspaceEvidence(data,dj,item,state){
   });
   return hits.length?hits:sets.map(set=>({set,entry:set.entries[0]}));
  }
- const sets=state.type==='all'||state.scope==='productions'?data.sets:workspaceSources(data,dj,state.expanded);
+ const sets=state.allSources||state.type==='all'||state.scope==='productions'?data.sets:workspaceSources(data,dj,state.expanded);
  const hits=occurrences(sets.map(s=>original.get(s.sourceUrl)),item.id);
  return hits.filter(h=>sets.some(s=>s.sourceUrl===h.set.sourceUrl&&s.entries.includes(h.entry)));
 }

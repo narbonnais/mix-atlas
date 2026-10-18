@@ -54,7 +54,7 @@ Use DM Sans only: headings30px/600, detail25px/600, music titles15–16px/500, c
 
 ## Layout
 
-One common workspace replaces the former navigation rail and task pages. A white header contains only the atlas wordmark, small language flag and Tools. Desktop uses a searchable result column up to340px and one adjacent detail panel separated by a hairline. The global search defaults to all collected sets, tracks and credited DJ groups, including independent collections; All / Tracks / DJs / Sets are filters of that same list. Scope and relation selectors belong to their relevant result type. Do not recreate separate task screens.
+One common workspace replaces the former navigation rail and task pages. A white header contains only the atlas wordmark, small language flag and Tools. Desktop uses a searchable result column up to340px and one adjacent detail panel separated by a hairline. The global search defaults to all collected sets, tracks and credited DJ groups, including independent collections; All / Tracks / DJs / Sets are filters of that same list. Do not show scope/relation selectors tied to a starting DJ. The result-type tabs filter the same global collection; the filter disclosure contains sorting only. Do not recreate separate task screens.
 
 The detail always leads with the selected song. A DJ filter appears only when several documented DJ groups are available; otherwise the DJ is metadata. A source selector precedes the complete collected tracklist. The exact selected occurrence is highlighted and centered automatically. Identified track rows can be followed without leaving the workspace, retaining their source context. Transitions expand below the list. Comparison is an inline secondary section using the same tracklist renderer.
 

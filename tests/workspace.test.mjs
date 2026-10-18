@@ -99,3 +99,28 @@ test('global DJ links retain existing identities and offer one passage per sourc
  assert.equal(hits.length,new Set(hits.map(h=>h.set.sourceUrl)).size);
  assert.ok(hits.every(h=>(h.entry.performers?.length?h.entry.performers:h.set.djs).join(' & ')==='Jeremy Olander'));
 });
+
+
+test('public result tabs filter the same global collection without a fixed DJ relation',()=>{
+ const base={...parseWorkspaceRoute(),allSources:true};
+ const all=workspaceItems(data,'Jeremy Olander',{...base,type:'all'});
+ for(const [type,kinds] of [['tracks',['track']],['djs',['dj']],['sets',['set','recording']]]){
+  const tab=workspaceItems(data,'Jeremy Olander',{...base,type});
+  assert.deepEqual(new Set(tab.map(item=>item.id)),new Set(all.filter(item=>kinds.includes(item.kind)).map(item=>item.id)));
+ }
+ const tracks=workspaceItems(data,'Jeremy Olander',{...base,type:'tracks'});
+ const mattheis=data.sets.find(set=>set.djs.includes('Mattheis'));
+ const entry=mattheis.entries.find(entry=>entry.status==='identified');
+ const track=tracks.find(track=>track.id===trackKey(entry));
+ assert.ok(workspaceEvidence(data,'Jeremy Olander',track,{...base,type:'tracks'}).some(hit=>hit.set.sourceUrl===mattheis.sourceUrl));
+});
+
+
+test('searching a song in DJs keeps passages focused on that song',()=>{
+ const state={...parseWorkspaceRoute(),type:'djs',query:'Steps',allSources:true};
+ const djs=workspaceItems(data,'Jeremy Olander',state);
+ const jeremy=djs.find(dj=>dj.title==='Jeremy Olander');
+ const hits=workspaceEvidence(data,'Jeremy Olander',jeremy,state);
+ assert.ok(hits.length>0);assert.ok(hits.every(hit=>hit.entry.title.toLowerCase().includes('steps')));
+ assert.equal(new Set(hits.map(hit=>hit.set.sourceUrl)).size,hits.length);
+});
