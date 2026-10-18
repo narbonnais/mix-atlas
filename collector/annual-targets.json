@@ -1,0 +1,1014 @@
+{
+  "collectedOn": "2026-10-18",
+  "from": "2025-10-18",
+  "through": "2026-10-18",
+  "olanderYear": 2026,
+  "policy": "Identified main-layer tracks selected solely by Jeremy, without a named remix/edit/rework; parenthetical Original/Extended/Club Mix accepted. Joint selections excluded.",
+  "targets": [
+    {
+      "artistCredit": "Martinou",
+      "url": "https://www.1001tracklists.com/artist/martinou/tracks.html",
+      "evidence": [
+        {
+          "artist": "Martinou",
+          "title": "Solid Core",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/2c4c1f1t/jeremy-olander-live-from-my-living-room-2026-10-01.html",
+          "trackId": "1001:6rbktk3x",
+          "position": 1
+        }
+      ]
+    },
+    {
+      "artistCredit": "Ryan Elliott",
+      "url": "https://www.1001tracklists.com/artist/ryan-elliott/tracks.html",
+      "evidence": [
+        {
+          "artist": "Ryan Elliott",
+          "title": "4JM7",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/2c4c1f1t/jeremy-olander-live-from-my-living-room-2026-10-01.html",
+          "trackId": null,
+          "position": 2
+        }
+      ]
+    },
+    {
+      "artistCredit": "Cleveland",
+      "url": "https://www.1001tracklists.com/artist/cleveland/tracks.html",
+      "evidence": [
+        {
+          "artist": "Cleveland",
+          "title": "Kyoto",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/2c4c1f1t/jeremy-olander-live-from-my-living-room-2026-10-01.html",
+          "trackId": "1001:21kx4d15",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "artistCredit": "Map.Ache",
+      "url": "https://www.1001tracklists.com/artist/map.ache/tracks.html",
+      "evidence": [
+        {
+          "artist": "Map.Ache",
+          "title": "Thank U Again",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/2c4c1f1t/jeremy-olander-live-from-my-living-room-2026-10-01.html",
+          "trackId": "1001:1u5cuq6x",
+          "position": 4
+        }
+      ]
+    },
+    {
+      "artistCredit": "Sebra Cruz",
+      "url": "https://www.1001tracklists.com/artist/sebra-cruz/tracks.html",
+      "evidence": [
+        {
+          "artist": "Sebra Cruz",
+          "title": "Hydroshima",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/2c4c1f1t/jeremy-olander-live-from-my-living-room-2026-10-01.html",
+          "trackId": "1001:1gd1xdsf",
+          "position": 5
+        }
+      ]
+    },
+    {
+      "artistCredit": "J.Singh",
+      "url": "https://www.1001tracklists.com/artist/j.singh/tracks.html",
+      "evidence": [
+        {
+          "artist": "J.Singh",
+          "title": "Anubis",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/2c4c1f1t/jeremy-olander-live-from-my-living-room-2026-10-01.html",
+          "trackId": "1001:glt5vp35",
+          "position": 6
+        },
+        {
+          "artist": "J.Singh",
+          "title": "Anubis",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/28btbps1/jeremy-olander-sauna-radio-stockholm-2026-07-04.html",
+          "trackId": "1001:glt5vp35",
+          "position": 7
+        },
+        {
+          "artist": "J.Singh",
+          "title": "Wake Up",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+          "trackId": "1001:1h2dx62p",
+          "position": 1
+        },
+        {
+          "artist": "J.Singh",
+          "title": "Papers",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+          "trackId": "1001:qrjrnsux",
+          "position": 13
+        },
+        {
+          "artist": "J.Singh",
+          "title": "Papers",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/2s4pux01/jeremy-olander-oling-joshua-brooks-manchester-united-kingdom-2026-05-02.html",
+          "trackId": "1001:qrjrnsux",
+          "position": 2
+        },
+        {
+          "artist": "J.Singh",
+          "title": "Anubis",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/2s4pux01/jeremy-olander-oling-joshua-brooks-manchester-united-kingdom-2026-05-02.html",
+          "trackId": null,
+          "position": 5
+        },
+        {
+          "artist": "J.Singh",
+          "title": "Papers",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:qrjrnsux",
+          "position": 44
+        },
+        {
+          "artist": "J.Singh",
+          "title": "Papers",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/qy6x7zt/johndigweed-jeremyolander-transitions-twilo-new-york-united-states-2001-03-02-2026-03-13.html",
+          "trackId": "1001:qrjrnsux",
+          "position": 11
+        },
+        {
+          "artist": "J.Singh",
+          "title": "Anubis",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/qy6x7zt/johndigweed-jeremyolander-transitions-twilo-new-york-united-states-2001-03-02-2026-03-13.html",
+          "trackId": "1001:glt5vp35",
+          "position": 12
+        }
+      ]
+    },
+    {
+      "artistCredit": "Fausto Messina",
+      "url": "https://www.1001tracklists.com/artist/fausto-messina/tracks.html",
+      "evidence": [
+        {
+          "artist": "Fausto Messina",
+          "title": "Extasy",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/2c4c1f1t/jeremy-olander-live-from-my-living-room-2026-10-01.html",
+          "trackId": "1001:mk3lj10x",
+          "position": 13
+        }
+      ]
+    },
+    {
+      "artistCredit": "Erik Luebs",
+      "url": "https://www.1001tracklists.com/artist/erik-luebs/tracks.html",
+      "evidence": [
+        {
+          "artist": "Erik Luebs",
+          "title": "An Embrace",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/1z0ll9p9/jeremy-olander-beach-stage-balance-croatia-festival-croatia-2026-08-08.html",
+          "trackId": "1001:pl7j71t5",
+          "position": 14
+        }
+      ]
+    },
+    {
+      "artistCredit": "Yansima",
+      "url": "https://www.1001tracklists.com/artist/yansima/tracks.html",
+      "evidence": [
+        {
+          "artist": "Yansima",
+          "title": "Tweede Cans",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/28btbps1/jeremy-olander-sauna-radio-stockholm-2026-07-04.html",
+          "trackId": "1001:1ltwdwyx",
+          "position": 1
+        }
+      ]
+    },
+    {
+      "artistCredit": "Pierre Marty",
+      "url": "https://www.1001tracklists.com/artist/pierre-marty/tracks.html",
+      "evidence": [
+        {
+          "artist": "Pierre Marty",
+          "title": "Try Again",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/28btbps1/jeremy-olander-sauna-radio-stockholm-2026-07-04.html",
+          "trackId": "1001:gvx1yyr5",
+          "position": 5
+        }
+      ]
+    },
+    {
+      "artistCredit": "Cornucopia",
+      "url": "https://www.1001tracklists.com/artist/cornucopia/tracks.html",
+      "evidence": [
+        {
+          "artist": "Cornucopia",
+          "title": "Before Anyone Else",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+          "trackId": "1001:1g4kg0tx",
+          "position": 16
+        }
+      ]
+    },
+    {
+      "artistCredit": "OLING",
+      "url": "https://www.1001tracklists.com/artist/oling/tracks.html",
+      "evidence": [
+        {
+          "artist": "OLING",
+          "title": "Get On The Floor",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+          "trackId": "1001:70mnqbkp",
+          "position": 20
+        },
+        {
+          "artist": "OLING",
+          "title": "Motor",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:7wksnghf",
+          "position": 15
+        },
+        {
+          "artist": "OLING",
+          "title": "Ded",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:wkqt1hnp",
+          "position": 32
+        }
+      ]
+    },
+    {
+      "artistCredit": "Arno Cost",
+      "url": "https://www.1001tracklists.com/artist/arno-cost/tracks.html",
+      "evidence": [
+        {
+          "artist": "Arno Cost",
+          "title": "Night Feelings",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+          "trackId": null,
+          "position": 21
+        }
+      ]
+    },
+    {
+      "artistCredit": "Axwell & Eric Prydz pres. Axer",
+      "url": "https://www.1001tracklists.com/artist/axwell/tracks.html",
+      "evidence": [
+        {
+          "artist": "Axwell & Eric Prydz pres. Axer",
+          "title": "123",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+          "trackId": "1001:88bbzx",
+          "position": 24
+        }
+      ]
+    },
+    {
+      "artistCredit": "Axwell & Eric Prydz pres. Axer",
+      "url": "https://www.1001tracklists.com/artist/eric-prydz/tracks.html",
+      "evidence": [
+        {
+          "artist": "Axwell & Eric Prydz pres. Axer",
+          "title": "123",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+          "trackId": "1001:88bbzx",
+          "position": 24
+        }
+      ]
+    },
+    {
+      "artistCredit": "Axwell & Eric Prydz pres. Axer",
+      "url": "https://www.1001tracklists.com/artist/3vn68k4/axwell-&-eric-prydz-pres.-axer/tracks.html",
+      "evidence": [
+        {
+          "artist": "Axwell & Eric Prydz pres. Axer",
+          "title": "123",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+          "trackId": "1001:88bbzx",
+          "position": 24
+        }
+      ]
+    },
+    {
+      "artistCredit": "Applescal",
+      "url": "https://www.1001tracklists.com/artist/applescal/tracks.html",
+      "evidence": [
+        {
+          "artist": "Applescal",
+          "title": "Take Me Back",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+          "trackId": "1001:2y79rdd5",
+          "position": 34
+        },
+        {
+          "artist": "Applescal",
+          "title": "Harmony Two",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:k28k79f",
+          "position": 27
+        }
+      ]
+    },
+    {
+      "artistCredit": "Sébastien Léger",
+      "url": "https://www.1001tracklists.com/artist/sebastien-leger/tracks.html",
+      "evidence": [
+        {
+          "artist": "Sébastien Léger",
+          "title": "Dodonpachi",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+          "trackId": "1001:p8ydwntx",
+          "position": 36
+        }
+      ]
+    },
+    {
+      "artistCredit": "Butch",
+      "url": "https://www.1001tracklists.com/artist/butch/tracks.html",
+      "evidence": [
+        {
+          "artist": "Butch",
+          "title": "Go Brooklyn",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+          "trackId": "1001:2u8v3h5f",
+          "position": 41
+        },
+        {
+          "artist": "Butch",
+          "title": "Formula E",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:7wjtkz7p",
+          "position": 39
+        }
+      ]
+    },
+    {
+      "artistCredit": "Andy Chatterley",
+      "url": "https://www.1001tracklists.com/artist/andy-chatterley/tracks.html",
+      "evidence": [
+        {
+          "artist": "Andy Chatterley",
+          "title": "Access The Future",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+          "trackId": "1001:48bjlx",
+          "position": 44
+        }
+      ]
+    },
+    {
+      "artistCredit": "Jerry Ropero ft. Cozi",
+      "url": "https://www.1001tracklists.com/artist/jerry-ropero/tracks.html",
+      "evidence": [
+        {
+          "artist": "Jerry Ropero ft. Cozi",
+          "title": "The Storm",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+          "trackId": "1001:rg3x05",
+          "position": 55
+        }
+      ]
+    },
+    {
+      "artistCredit": "Jerry Ropero ft. Cozi",
+      "url": "https://www.1001tracklists.com/artist/cozi/tracks.html",
+      "evidence": [
+        {
+          "artist": "Jerry Ropero ft. Cozi",
+          "title": "The Storm",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+          "trackId": "1001:rg3x05",
+          "position": 55
+        }
+      ]
+    },
+    {
+      "artistCredit": "Agustin Giri",
+      "url": "https://www.1001tracklists.com/artist/agustin-giri/tracks.html",
+      "evidence": [
+        {
+          "artist": "Agustin Giri",
+          "title": "Amancay",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/2s4pux01/jeremy-olander-oling-joshua-brooks-manchester-united-kingdom-2026-05-02.html",
+          "trackId": null,
+          "position": 11
+        },
+        {
+          "artist": "Agustin Giri & Last Men On Earth",
+          "title": "Playground",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:j15uml45",
+          "position": 31
+        }
+      ]
+    },
+    {
+      "artistCredit": "Chymera",
+      "url": "https://www.1001tracklists.com/artist/chymera/tracks.html",
+      "evidence": [
+        {
+          "artist": "Chymera",
+          "title": "Episode",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/2s4pux01/jeremy-olander-oling-joshua-brooks-manchester-united-kingdom-2026-05-02.html",
+          "trackId": "1001:15kgudup",
+          "position": 17
+        }
+      ]
+    },
+    {
+      "artistCredit": "Nuno Dos Santos",
+      "url": "https://www.1001tracklists.com/artist/nuno-dos-santos/tracks.html",
+      "evidence": [
+        {
+          "artist": "Nuno Dos Santos",
+          "title": "Dust In Your Eyes",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:2ctjwgbx",
+          "position": 2
+        }
+      ]
+    },
+    {
+      "artistCredit": "Priori",
+      "url": "https://www.1001tracklists.com/artist/priori/tracks.html",
+      "evidence": [
+        {
+          "artist": "Priori",
+          "title": "9",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": null,
+          "position": 3
+        }
+      ]
+    },
+    {
+      "artistCredit": "Stephan Hinz",
+      "url": "https://www.1001tracklists.com/artist/stephan-hinz/tracks.html",
+      "evidence": [
+        {
+          "artist": "Stephan Hinz",
+          "title": "When The Cheese Is Gone",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:mr0cv9x",
+          "position": 4
+        }
+      ]
+    },
+    {
+      "artistCredit": "Black Eyes",
+      "url": "https://www.1001tracklists.com/artist/black-eyes/tracks.html",
+      "evidence": [
+        {
+          "artist": "Black Eyes",
+          "title": "Movin Deeper",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:6r97xdcf",
+          "position": 7
+        },
+        {
+          "artist": "Black Eyes",
+          "title": "Groovin Deeper",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": null,
+          "position": 8
+        }
+      ]
+    },
+    {
+      "artistCredit": "Edmondson",
+      "url": "https://www.1001tracklists.com/artist/edmondson/tracks.html",
+      "evidence": [
+        {
+          "artist": "Edmondson",
+          "title": "Joao",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": null,
+          "position": 9
+        }
+      ]
+    },
+    {
+      "artistCredit": "Allen (IT) & Filix",
+      "url": "https://www.1001tracklists.com/artist/allen-(it)/tracks.html",
+      "evidence": [
+        {
+          "artist": "Allen (IT) & Filix",
+          "title": "Dusty Palace",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:1f66c87f",
+          "position": 10
+        }
+      ]
+    },
+    {
+      "artistCredit": "Allen (IT) & Filix",
+      "url": "https://www.1001tracklists.com/artist/filix/tracks.html",
+      "evidence": [
+        {
+          "artist": "Allen (IT) & Filix",
+          "title": "Dusty Palace",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:1f66c87f",
+          "position": 10
+        }
+      ]
+    },
+    {
+      "artistCredit": "DJ Balduin",
+      "url": "https://www.1001tracklists.com/artist/dj-balduin/tracks.html",
+      "evidence": [
+        {
+          "artist": "DJ Balduin",
+          "title": "You",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": null,
+          "position": 17
+        }
+      ]
+    },
+    {
+      "artistCredit": "Pig&Dan & Rachel Lyn",
+      "url": "https://www.1001tracklists.com/artist/pig&dan/tracks.html",
+      "evidence": [
+        {
+          "artist": "Pig&Dan & Rachel Lyn",
+          "title": "I Am One",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:mqq79l5",
+          "position": 18
+        }
+      ]
+    },
+    {
+      "artistCredit": "Pig&Dan & Rachel Lyn",
+      "url": "https://www.1001tracklists.com/artist/rachel-lyn/tracks.html",
+      "evidence": [
+        {
+          "artist": "Pig&Dan & Rachel Lyn",
+          "title": "I Am One",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:mqq79l5",
+          "position": 18
+        }
+      ]
+    },
+    {
+      "artistCredit": "Carl Craig pres. Paperclip People",
+      "url": "https://www.1001tracklists.com/artist/paperclip-people/tracks.html",
+      "evidence": [
+        {
+          "artist": "Carl Craig pres. Paperclip People",
+          "title": "Throw",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:cs8wm5",
+          "position": 20
+        }
+      ]
+    },
+    {
+      "artistCredit": "M-High",
+      "url": "https://www.1001tracklists.com/artist/m-high/tracks.html",
+      "evidence": [
+        {
+          "artist": "M-High",
+          "title": "Soulseeker",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:t1xkzv6f",
+          "position": 22
+        }
+      ]
+    },
+    {
+      "artistCredit": "Aera",
+      "url": "https://www.1001tracklists.com/artist/aera/tracks.html",
+      "evidence": [
+        {
+          "artist": "Aera",
+          "title": "Bliss Point",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:2rgufvnp",
+          "position": 25
+        }
+      ]
+    },
+    {
+      "artistCredit": "Tim Engelhardt & BOg",
+      "url": "https://www.1001tracklists.com/artist/tim-engelhardt/tracks.html",
+      "evidence": [
+        {
+          "artist": "Tim Engelhardt & BOg",
+          "title": "Astronauts",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:18fj7t7f",
+          "position": 26
+        }
+      ]
+    },
+    {
+      "artistCredit": "Tim Engelhardt & BOg",
+      "url": "https://www.1001tracklists.com/artist/bog/tracks.html",
+      "evidence": [
+        {
+          "artist": "Tim Engelhardt & BOg",
+          "title": "Astronauts",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:18fj7t7f",
+          "position": 26
+        }
+      ]
+    },
+    {
+      "artistCredit": "Agustin Giri & Last Men On Earth",
+      "url": "https://www.1001tracklists.com/artist/last-men-on-earth/tracks.html",
+      "evidence": [
+        {
+          "artist": "Agustin Giri & Last Men On Earth",
+          "title": "Playground",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:j15uml45",
+          "position": 31
+        }
+      ]
+    },
+    {
+      "artistCredit": "Pryda",
+      "url": "https://www.1001tracklists.com/artist/pryda/tracks.html",
+      "evidence": [
+        {
+          "artist": "Pryda",
+          "title": "From Within",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+          "trackId": "1001:1sx58655",
+          "position": 36
+        }
+      ]
+    },
+    {
+      "artistCredit": "Tin Man",
+      "url": "https://www.1001tracklists.com/artist/tin-man/tracks.html",
+      "evidence": [
+        {
+          "artist": "Tin Man",
+          "title": "Mystified Acid",
+          "sourceUrl": "https://www.1001tracklists.com/tracklist/qy6x7zt/johndigweed-jeremyolander-transitions-twilo-new-york-united-states-2001-03-02-2026-03-13.html",
+          "trackId": "1001:duvydbrx",
+          "position": 18
+        }
+      ]
+    }
+  ],
+  "withoutProfile": [
+    {
+      "artist": "Mcgregor",
+      "title": "Reality",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/28btbps1/jeremy-olander-sauna-radio-stockholm-2026-07-04.html",
+      "trackId": null,
+      "position": 3
+    }
+  ],
+  "qualifyingTracks": [
+    {
+      "artist": "Martinou",
+      "title": "Solid Core",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/2c4c1f1t/jeremy-olander-live-from-my-living-room-2026-10-01.html",
+      "trackId": "1001:6rbktk3x",
+      "position": 1
+    },
+    {
+      "artist": "Ryan Elliott",
+      "title": "4JM7",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/2c4c1f1t/jeremy-olander-live-from-my-living-room-2026-10-01.html",
+      "trackId": null,
+      "position": 2
+    },
+    {
+      "artist": "Cleveland",
+      "title": "Kyoto",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/2c4c1f1t/jeremy-olander-live-from-my-living-room-2026-10-01.html",
+      "trackId": "1001:21kx4d15",
+      "position": 3
+    },
+    {
+      "artist": "Map.Ache",
+      "title": "Thank U Again",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/2c4c1f1t/jeremy-olander-live-from-my-living-room-2026-10-01.html",
+      "trackId": "1001:1u5cuq6x",
+      "position": 4
+    },
+    {
+      "artist": "Sebra Cruz",
+      "title": "Hydroshima",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/2c4c1f1t/jeremy-olander-live-from-my-living-room-2026-10-01.html",
+      "trackId": "1001:1gd1xdsf",
+      "position": 5
+    },
+    {
+      "artist": "J.Singh",
+      "title": "Anubis",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/2c4c1f1t/jeremy-olander-live-from-my-living-room-2026-10-01.html",
+      "trackId": "1001:glt5vp35",
+      "position": 6
+    },
+    {
+      "artist": "Fausto Messina",
+      "title": "Extasy",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/2c4c1f1t/jeremy-olander-live-from-my-living-room-2026-10-01.html",
+      "trackId": "1001:mk3lj10x",
+      "position": 13
+    },
+    {
+      "artist": "Erik Luebs",
+      "title": "An Embrace",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/1z0ll9p9/jeremy-olander-beach-stage-balance-croatia-festival-croatia-2026-08-08.html",
+      "trackId": "1001:pl7j71t5",
+      "position": 14
+    },
+    {
+      "artist": "Yansima",
+      "title": "Tweede Cans",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/28btbps1/jeremy-olander-sauna-radio-stockholm-2026-07-04.html",
+      "trackId": "1001:1ltwdwyx",
+      "position": 1
+    },
+    {
+      "artist": "Mcgregor",
+      "title": "Reality",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/28btbps1/jeremy-olander-sauna-radio-stockholm-2026-07-04.html",
+      "trackId": null,
+      "position": 3
+    },
+    {
+      "artist": "Pierre Marty",
+      "title": "Try Again",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/28btbps1/jeremy-olander-sauna-radio-stockholm-2026-07-04.html",
+      "trackId": "1001:gvx1yyr5",
+      "position": 5
+    },
+    {
+      "artist": "J.Singh",
+      "title": "Anubis",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/28btbps1/jeremy-olander-sauna-radio-stockholm-2026-07-04.html",
+      "trackId": "1001:glt5vp35",
+      "position": 7
+    },
+    {
+      "artist": "J.Singh",
+      "title": "Wake Up",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+      "trackId": "1001:1h2dx62p",
+      "position": 1
+    },
+    {
+      "artist": "J.Singh",
+      "title": "Papers",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+      "trackId": "1001:qrjrnsux",
+      "position": 13
+    },
+    {
+      "artist": "Cornucopia",
+      "title": "Before Anyone Else",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+      "trackId": "1001:1g4kg0tx",
+      "position": 16
+    },
+    {
+      "artist": "OLING",
+      "title": "Get On The Floor",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+      "trackId": "1001:70mnqbkp",
+      "position": 20
+    },
+    {
+      "artist": "Arno Cost",
+      "title": "Night Feelings",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+      "trackId": null,
+      "position": 21
+    },
+    {
+      "artist": "Axwell & Eric Prydz pres. Axer",
+      "title": "123",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+      "trackId": "1001:88bbzx",
+      "position": 24
+    },
+    {
+      "artist": "Applescal",
+      "title": "Take Me Back",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+      "trackId": "1001:2y79rdd5",
+      "position": 34
+    },
+    {
+      "artist": "Sébastien Léger",
+      "title": "Dodonpachi",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+      "trackId": "1001:p8ydwntx",
+      "position": 36
+    },
+    {
+      "artist": "Butch",
+      "title": "Go Brooklyn",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+      "trackId": "1001:2u8v3h5f",
+      "position": 41
+    },
+    {
+      "artist": "Andy Chatterley",
+      "title": "Access The Future",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+      "trackId": "1001:48bjlx",
+      "position": 44
+    },
+    {
+      "artist": "Jerry Ropero ft. Cozi",
+      "title": "The Storm",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/wkk91ut/jeremy-olander-sunset-park-rooftop-brooklyn-new-york-united-states-2026-06-05.html",
+      "trackId": "1001:rg3x05",
+      "position": 55
+    },
+    {
+      "artist": "J.Singh",
+      "title": "Papers",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/2s4pux01/jeremy-olander-oling-joshua-brooks-manchester-united-kingdom-2026-05-02.html",
+      "trackId": "1001:qrjrnsux",
+      "position": 2
+    },
+    {
+      "artist": "J.Singh",
+      "title": "Anubis",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/2s4pux01/jeremy-olander-oling-joshua-brooks-manchester-united-kingdom-2026-05-02.html",
+      "trackId": null,
+      "position": 5
+    },
+    {
+      "artist": "Agustin Giri",
+      "title": "Amancay",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/2s4pux01/jeremy-olander-oling-joshua-brooks-manchester-united-kingdom-2026-05-02.html",
+      "trackId": null,
+      "position": 11
+    },
+    {
+      "artist": "Chymera",
+      "title": "Episode",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/2s4pux01/jeremy-olander-oling-joshua-brooks-manchester-united-kingdom-2026-05-02.html",
+      "trackId": "1001:15kgudup",
+      "position": 17
+    },
+    {
+      "artist": "Nuno Dos Santos",
+      "title": "Dust In Your Eyes",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:2ctjwgbx",
+      "position": 2
+    },
+    {
+      "artist": "Priori",
+      "title": "9",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": null,
+      "position": 3
+    },
+    {
+      "artist": "Stephan Hinz",
+      "title": "When The Cheese Is Gone",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:mr0cv9x",
+      "position": 4
+    },
+    {
+      "artist": "Black Eyes",
+      "title": "Movin Deeper",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:6r97xdcf",
+      "position": 7
+    },
+    {
+      "artist": "Black Eyes",
+      "title": "Groovin Deeper",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": null,
+      "position": 8
+    },
+    {
+      "artist": "Edmondson",
+      "title": "Joao",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": null,
+      "position": 9
+    },
+    {
+      "artist": "Allen (IT) & Filix",
+      "title": "Dusty Palace",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:1f66c87f",
+      "position": 10
+    },
+    {
+      "artist": "OLING",
+      "title": "Motor",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:7wksnghf",
+      "position": 15
+    },
+    {
+      "artist": "DJ Balduin",
+      "title": "You",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": null,
+      "position": 17
+    },
+    {
+      "artist": "Pig&Dan & Rachel Lyn",
+      "title": "I Am One",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:mqq79l5",
+      "position": 18
+    },
+    {
+      "artist": "Carl Craig pres. Paperclip People",
+      "title": "Throw",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:cs8wm5",
+      "position": 20
+    },
+    {
+      "artist": "M-High",
+      "title": "Soulseeker",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:t1xkzv6f",
+      "position": 22
+    },
+    {
+      "artist": "Aera",
+      "title": "Bliss Point",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:2rgufvnp",
+      "position": 25
+    },
+    {
+      "artist": "Tim Engelhardt & BOg",
+      "title": "Astronauts",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:18fj7t7f",
+      "position": 26
+    },
+    {
+      "artist": "Applescal",
+      "title": "Harmony Two",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:k28k79f",
+      "position": 27
+    },
+    {
+      "artist": "Agustin Giri & Last Men On Earth",
+      "title": "Playground",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:j15uml45",
+      "position": 31
+    },
+    {
+      "artist": "OLING",
+      "title": "Ded",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:wkqt1hnp",
+      "position": 32
+    },
+    {
+      "artist": "Pryda",
+      "title": "From Within",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:1sx58655",
+      "position": 36
+    },
+    {
+      "artist": "Butch",
+      "title": "Formula E",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:7wjtkz7p",
+      "position": 39
+    },
+    {
+      "artist": "J.Singh",
+      "title": "Papers",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/hhxms91/jeremy-olander-huset-under-bron-stockholm-sweden-2026-04-02.html",
+      "trackId": "1001:qrjrnsux",
+      "position": 44
+    },
+    {
+      "artist": "J.Singh",
+      "title": "Papers",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/qy6x7zt/johndigweed-jeremyolander-transitions-twilo-new-york-united-states-2001-03-02-2026-03-13.html",
+      "trackId": "1001:qrjrnsux",
+      "position": 11
+    },
+    {
+      "artist": "J.Singh",
+      "title": "Anubis",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/qy6x7zt/johndigweed-jeremyolander-transitions-twilo-new-york-united-states-2001-03-02-2026-03-13.html",
+      "trackId": "1001:glt5vp35",
+      "position": 12
+    },
+    {
+      "artist": "Tin Man",
+      "title": "Mystified Acid",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/qy6x7zt/johndigweed-jeremyolander-transitions-twilo-new-york-united-states-2001-03-02-2026-03-13.html",
+      "trackId": "1001:duvydbrx",
+      "position": 18
+    }
+  ]
+}

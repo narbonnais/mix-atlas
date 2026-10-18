@@ -1,0 +1,656 @@
+{
+  "schemaVersion": 1,
+  "collectedOn": "2026-10-18",
+  "sets": [
+    {
+      "title": "Mattheis (Live PA) @ Draaimolen Festival, Tilburg, Netherlands",
+      "djs": [
+        "Mattheis"
+      ],
+      "date": "2022-09-09",
+      "dateType": "source",
+      "sourceUrl": "https://www.mixesdb.com/w/2022-09-09_-_Mattheis_(Live_PA)_@_Draaimolen_Festival,_Tilburg,_Netherlands",
+      "sourceName": "MixesDB",
+      "mediaUrl": "https://soundcloud.com/draaimolen/mattheis-live-at-draaimolen-festival-2022",
+      "coverage": "published",
+      "collectedOn": "2026-10-18",
+      "durationSeconds": 3548,
+      "scopeNote": null,
+      "accuracyNote": "Repères publiés à la minute, approximatifs. Tracklist incomplète ; les IDs interrompent les transitions.",
+      "excludedOtherDjRows": 0,
+      "entries": [
+        {
+          "position": 1,
+          "sourcePosition": "1",
+          "artist": "ID",
+          "title": "ID",
+          "status": "unresolved",
+          "layer": "main",
+          "timeSeconds": 0,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 2,
+          "sourcePosition": "2",
+          "artist": "ID",
+          "title": "ID",
+          "status": "unresolved",
+          "layer": "main",
+          "timeSeconds": 420,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 3,
+          "sourcePosition": "3",
+          "artist": "Mattheis",
+          "title": "No Sun No Moon",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 780,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 4,
+          "sourcePosition": "4",
+          "artist": "ID",
+          "title": "ID",
+          "status": "unresolved",
+          "layer": "main",
+          "timeSeconds": 1320,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 5,
+          "sourcePosition": "5",
+          "artist": "ID",
+          "title": "ID",
+          "status": "unresolved",
+          "layer": "main",
+          "timeSeconds": 1740,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 6,
+          "sourcePosition": "6",
+          "artist": "ID",
+          "title": "ID",
+          "status": "unresolved",
+          "layer": "main",
+          "timeSeconds": 2160,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 7,
+          "sourcePosition": "7",
+          "artist": "ID",
+          "title": "ID",
+          "status": "unresolved",
+          "layer": "main",
+          "timeSeconds": 2520,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 8,
+          "sourcePosition": "8",
+          "artist": "ID",
+          "title": "ID",
+          "status": "unresolved",
+          "layer": "main",
+          "timeSeconds": 2940,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 9,
+          "sourcePosition": "9",
+          "artist": "ID",
+          "title": "ID",
+          "status": "unresolved",
+          "layer": "main",
+          "timeSeconds": 3240,
+          "performers": [
+            "Mattheis"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mattheis @ Future Intel",
+      "djs": [
+        "Mattheis"
+      ],
+      "date": "2022-08-04",
+      "dateType": "source",
+      "sourceUrl": "https://www.mixesdb.com/w/2022-08-04_-_Mattheis_@_Future_Intel",
+      "sourceName": "MixesDB",
+      "mediaUrl": "https://soundcloud.com/future-intel/mattheis-future-intel-04-08-2022",
+      "coverage": "published",
+      "collectedOn": "2026-10-18",
+      "durationSeconds": 3425,
+      "scopeNote": null,
+      "accuracyNote": "Repères publiés à la minute, approximatifs. Tracklist incomplète ; les IDs interrompent les transitions.",
+      "excludedOtherDjRows": 0,
+      "entries": [
+        {
+          "position": 1,
+          "sourcePosition": "1",
+          "artist": "HAL & Perm",
+          "title": "Kido",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 0,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 2,
+          "sourcePosition": "2",
+          "artist": "Perm",
+          "title": "Suda Scholm Fäul",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 300,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 3,
+          "sourcePosition": "3",
+          "artist": "Yan Cook",
+          "title": "Gambler",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 600,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 4,
+          "sourcePosition": "4",
+          "artist": "DD 2",
+          "title": "Infinite",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 900,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 5,
+          "sourcePosition": "5",
+          "artist": "D.Dan",
+          "title": "Post Kyiv",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 1200,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 6,
+          "sourcePosition": "6",
+          "artist": "Voiski",
+          "title": "Hazy Suns",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 1440,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 7,
+          "sourcePosition": "7",
+          "artist": "ID",
+          "title": "ID",
+          "status": "unresolved",
+          "layer": "main",
+          "timeSeconds": 1680,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 8,
+          "sourcePosition": "8",
+          "artist": "Alan Backdrop",
+          "title": "Quaraman",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 2040,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 9,
+          "sourcePosition": "9",
+          "artist": "HAL",
+          "title": "Tau",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 2340,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 10,
+          "sourcePosition": "10",
+          "artist": "nthng",
+          "title": "Earthseed",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 2580,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 11,
+          "sourcePosition": "11",
+          "artist": "HAL",
+          "title": "I-295",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 2880,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 12,
+          "sourcePosition": "12",
+          "artist": "ID",
+          "title": "ID",
+          "status": "unresolved",
+          "layer": "main",
+          "timeSeconds": 3360,
+          "performers": [
+            "Mattheis"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mattheis @ Operator Radio",
+      "djs": [
+        "Mattheis"
+      ],
+      "date": "2022-05-06",
+      "dateType": "source",
+      "sourceUrl": "https://www.mixesdb.com/w/2022-05-06_-_Mattheis_@_Operator_Radio",
+      "sourceName": "MixesDB",
+      "mediaUrl": "https://soundcloud.com/mattheis/mattheis-08-operator-radio-0605",
+      "coverage": "published",
+      "collectedOn": "2026-10-18",
+      "durationSeconds": null,
+      "scopeNote": null,
+      "accuracyNote": "Repères publiés à la minute, approximatifs. Tracklist incomplète ; les IDs interrompent les transitions.",
+      "excludedOtherDjRows": 0,
+      "entries": [
+        {
+          "position": 1,
+          "sourcePosition": "1",
+          "artist": "Skee Mask",
+          "title": "Daytime Gamer (Version)",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 0,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 2,
+          "sourcePosition": "2",
+          "artist": "No Moon",
+          "title": "Are We Really Doing This",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 240,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 3,
+          "sourcePosition": "3",
+          "artist": "GiGi FM",
+          "title": "Senstronaut (MYO)",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 480,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 4,
+          "sourcePosition": "4",
+          "artist": "Answer Code Request",
+          "title": "Resonate",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 660,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 5,
+          "sourcePosition": "5",
+          "artist": "Skee Mask",
+          "title": "Wiz",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 960,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 6,
+          "sourcePosition": "6",
+          "artist": "Ben Klock",
+          "title": "A Friend Of A Friend",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 1140,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 7,
+          "sourcePosition": "7",
+          "artist": "DJ Nobu",
+          "title": "Comet",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 1320,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 8,
+          "sourcePosition": "8",
+          "artist": "ID",
+          "title": "ID",
+          "status": "unresolved",
+          "layer": "main",
+          "timeSeconds": 1680,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 9,
+          "sourcePosition": "9",
+          "artist": "ID",
+          "title": "ID",
+          "status": "unresolved",
+          "layer": "main",
+          "timeSeconds": 1860,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 10,
+          "sourcePosition": "10",
+          "artist": "Amotik",
+          "title": "Adsath",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 2100,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 11,
+          "sourcePosition": "11",
+          "artist": "Lady Starlight & Rødhåd",
+          "title": "200701",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 2400,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 12,
+          "sourcePosition": "12",
+          "artist": "Karen Gwyer",
+          "title": "Caught You",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 2580,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 13,
+          "sourcePosition": "13",
+          "artist": "DJ Nobu",
+          "title": "Fade",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 2880,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 14,
+          "sourcePosition": "14",
+          "artist": "Sophia Saze",
+          "title": "Curtains",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 3240,
+          "performers": [
+            "Mattheis"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mattheis, Hakk - Observatory 030, OpenLab Radio",
+      "djs": [
+        "Mattheis",
+        "Hakk"
+      ],
+      "date": "2022-04-20",
+      "dateType": "source",
+      "sourceUrl": "https://www.mixesdb.com/w/2022-04-20_-_Mattheis,_Hakk_-_Observatory_030,_OpenLab_Radio",
+      "sourceName": "MixesDB",
+      "mediaUrl": "https://soundcloud.com/openlabradio/observatory-030-sungate-with-mattheis-hakk",
+      "coverage": "published",
+      "collectedOn": "2026-10-18",
+      "durationSeconds": null,
+      "scopeNote": "Seule la section Mattheis de cette émission est importée. La section Hakk commence à 57 minutes.",
+      "accuracyNote": "Repères publiés à la minute, approximatifs. Tracklist incomplète ; les IDs interrompent les transitions.",
+      "excludedOtherDjRows": 14,
+      "entries": [
+        {
+          "position": 1,
+          "sourcePosition": "1",
+          "artist": "Suso Saiz & Suzanne Kraft",
+          "title": "Beloved Din",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 0,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 2,
+          "sourcePosition": "2",
+          "artist": "Refracted",
+          "title": "Down Under",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 420,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 3,
+          "sourcePosition": "3",
+          "artist": "ID",
+          "title": "ID",
+          "status": "unresolved",
+          "layer": "main",
+          "timeSeconds": 720,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 4,
+          "sourcePosition": "4",
+          "artist": "Artefakt",
+          "title": "Cambium",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 960,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 5,
+          "sourcePosition": "5",
+          "artist": "No Moon",
+          "title": "Are We Reality Doing This?",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 1260,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 6,
+          "sourcePosition": "6",
+          "artist": "Svarog",
+          "title": "Renunciation",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 1860,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 7,
+          "sourcePosition": "7",
+          "artist": "Forest Drive West",
+          "title": "Lost Signal",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 2400,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 8,
+          "sourcePosition": "8",
+          "artist": "Saphileaum",
+          "title": "Visions Tunnels (BLNDR Reshape)",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 2700,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 9,
+          "sourcePosition": "9",
+          "artist": "Distant Echos",
+          "title": "Maniac Ambient",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 3000,
+          "performers": [
+            "Mattheis"
+          ]
+        },
+        {
+          "position": 10,
+          "sourcePosition": "10",
+          "artist": "Evigt Mörker",
+          "title": "Kvävd",
+          "status": "identified",
+          "layer": "main",
+          "timeSeconds": 3180,
+          "performers": [
+            "Mattheis"
+          ]
+        }
+      ]
+    }
+  ],
+  "recordings": [
+    {
+      "title": "Anthony Linell & Mattheis live at Draaimolen Festival 2024",
+      "djs": [
+        "Anthony Linell",
+        "Mattheis"
+      ],
+      "sourceUrl": "https://soundcloud.com/draaimolen/anthony-linell-mattheis-live-at-draaimolen-festival-2024",
+      "mediaUrl": "https://soundcloud.com/draaimolen/anthony-linell-mattheis-live-at-draaimolen-festival-2024",
+      "year": 2024,
+      "publishedOn": "2025-06-24",
+      "releasedOn": "2025-03-31",
+      "sourceName": "Draaimolen · SoundCloud",
+      "tracklistStatus": "unavailable",
+      "note": "Live en duo. Aucune tracklist publiée trouvée sur la page de l’organisateur.",
+      "collectedOn": "2026-10-18"
+    },
+    {
+      "title": "Mattheis at Blijdorp 2022",
+      "djs": [
+        "Mattheis"
+      ],
+      "sourceUrl": "https://soundcloud.com/blijdorp-festival/mattheis-at-blijdorp-2022",
+      "mediaUrl": "https://soundcloud.com/blijdorp-festival/mattheis-at-blijdorp-2022",
+      "year": 2022,
+      "publishedOn": "2023-04-04",
+      "releasedOn": null,
+      "sourceName": "Blijdorp Festival · SoundCloud",
+      "tracklistStatus": "unavailable",
+      "note": "Set de la scène Wildernis. Quelques identifications sont proposées dans les commentaires ; aucune tracklist validée importée.",
+      "collectedOn": "2026-10-18"
+    }
+  ]
+}

@@ -1,0 +1,717 @@
+{
+  "schemaVersion": 1,
+  "seedDj": "Jeremy Olander",
+  "collectedOn": "2026-10-18",
+  "coverage": "Échantillon de tracklists publiées ; aucune exhaustivité annoncée.",
+  "sets": [
+    {
+      "id": "city-hall",
+      "title": "Vivrant × City Hall · Stockholm",
+      "djs": [
+        "Jeremy Olander"
+      ],
+      "date": "2022-10-15",
+      "dateType": "source",
+      "sourceUrl": "https://watchthedj.com/djvideos/jeremy-olander-live-at-vivrant-x-city-hall-in-stockholm-2022",
+      "sourceName": "WatchTheDJ · vidéo DJ Mag",
+      "coverage": "published",
+      "entries": [
+        {
+          "position": 1,
+          "artist": "Jeremy Olander",
+          "title": "City Hall Intro ID 01",
+          "timeSeconds": 1,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 2,
+          "artist": "Jeremy Olander",
+          "title": "City Hall ID 02",
+          "timeSeconds": 333,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 3,
+          "artist": "Jeremy Olander",
+          "title": "Revolution ID (Working Title)",
+          "timeSeconds": 666,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 4,
+          "artist": "Jeremy Olander",
+          "title": "Trainyard ID 04 (Working Title)",
+          "timeSeconds": 986,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 5,
+          "artist": "Jeremy Olander",
+          "title": "City Hall ID 03",
+          "timeSeconds": 1416,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 6,
+          "artist": "Jeremy Olander",
+          "title": "Atlanten",
+          "timeSeconds": 1707,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 7,
+          "artist": "Jeremy Olander",
+          "title": "Rypamont",
+          "timeSeconds": 2069,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 8,
+          "artist": "Jeremy Olander",
+          "title": "Hanover",
+          "timeSeconds": 2430,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 9,
+          "artist": "Jeremy Olander",
+          "title": "Sound Bar ID 01 (Working Title)",
+          "timeSeconds": 2786,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 10,
+          "artist": "Jeremy Olander",
+          "title": "Rubicks",
+          "timeSeconds": 3135,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 11,
+          "artist": "Jeremy Olander",
+          "title": "Sound LA 2022 ID (Working Title)",
+          "timeSeconds": 3475,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 12,
+          "artist": "Jeremy Olander",
+          "title": "Trainyard ID 02",
+          "timeSeconds": 3874,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 13,
+          "artist": "Catz 'N Dogz & Theus Mago",
+          "title": "Fly",
+          "timeSeconds": 4265,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 14,
+          "artist": "Jeremy Olander",
+          "title": "Bayhert",
+          "timeSeconds": 4552,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 15,
+          "artist": "Dhillon",
+          "title": "Umbra",
+          "timeSeconds": 4784,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 16,
+          "artist": "Jeremy Olander",
+          "title": "Audio SF 2017 ID (Working Title)",
+          "timeSeconds": 5087,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 17,
+          "artist": "Jeremy Olander",
+          "title": "Noreaga",
+          "timeSeconds": 5433,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 18,
+          "artist": "Jeremy Olander",
+          "title": "Roots",
+          "timeSeconds": 5729,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 19,
+          "artist": "Jeremy Olander",
+          "title": "Murphy",
+          "timeSeconds": 6024,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 20,
+          "artist": "Jeremy Olander",
+          "title": "Sagan",
+          "timeSeconds": 6407,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 21,
+          "artist": "Jeremy Olander",
+          "title": "Depot",
+          "timeSeconds": 6731,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 22,
+          "artist": "Jeremy Olander",
+          "title": "Happy Life ID",
+          "timeSeconds": 7007,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 23,
+          "artist": "Jeremy Olander vs. Kamaliza",
+          "title": "Zanzibar (Sthlm Edit)",
+          "timeSeconds": 7363,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 24,
+          "artist": "Jeremy Olander",
+          "title": "Trainyard ID 10 (Working Title)",
+          "timeSeconds": 7725,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 25,
+          "artist": "Jeremy Olander",
+          "title": "The Drift",
+          "timeSeconds": 8076,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 26,
+          "artist": "Jeremy Olander",
+          "title": "Silius (Alfa Romero Remix)",
+          "timeSeconds": 8441,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 27,
+          "artist": "Jeremy Olander",
+          "title": "Roxbury",
+          "timeSeconds": 8779,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 28,
+          "artist": "Jeremy Olander",
+          "title": "Falls (Jeremy Olander Private Remix)",
+          "timeSeconds": 9140,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 29,
+          "artist": "Jeremy Olander",
+          "title": "City Hall ID 04",
+          "timeSeconds": 9393,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 30,
+          "artist": "Jeremy Olander",
+          "title": "Steps (Cinematic Edit)",
+          "timeSeconds": 9731,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 31,
+          "artist": "Jeremy Olander",
+          "title": "Steps",
+          "timeSeconds": 9916,
+          "layer": "main",
+          "status": "identified"
+        }
+      ],
+      "collectedOn": "2026-10-18",
+      "sourceSha256": "73fcc6f5f0fa075dcf94bea6093280b5d4e816c1df98e4b18818cb4527d553df",
+      "mediaUrl": "https://www.youtube.com/watch?v=3gtyHgqNRBQ"
+    },
+    {
+      "id": "sydney",
+      "title": "Vivrant At Sea · Sydney",
+      "djs": [
+        "Jeremy Olander"
+      ],
+      "date": "2020-02-29",
+      "dateType": "source",
+      "sourceUrl": "https://watchthedj.com/djvideos/jeremy-olander-live-at-vivrant-at-sea-sydney-australia-2020",
+      "sourceName": "WatchTheDJ",
+      "coverage": "published",
+      "entries": [
+        {
+          "position": 1,
+          "artist": "Jeremy Olander",
+          "title": "The Great Northern Intro ID (Working Title)",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 2,
+          "artist": "Jeremy Olander",
+          "title": "Nattuggla",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 3,
+          "artist": "Adriatique",
+          "title": "Soul Valley",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 4,
+          "artist": "Roosevelt",
+          "title": "Heart (Cleveland Remix)",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 5,
+          "artist": "ID",
+          "title": "ID",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 6,
+          "artist": "ID",
+          "title": "ID",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 7,
+          "artist": "Robert Dietz",
+          "title": "Pandemic (Jeremy Olander Edit)",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 8,
+          "artist": "Storken",
+          "title": "Lille Vals",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 9,
+          "artist": "Jeremy Olander",
+          "title": "Q&A 2014 ID (Working Title)",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 10,
+          "artist": "Guy J",
+          "title": "Heliscope",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 11,
+          "artist": "Jeremy Olander vs. Kamaliza",
+          "title": "Zanzibar (Sthlm Edit)",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 12,
+          "artist": "Glowal",
+          "title": "Cries",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 13,
+          "artist": "Cirez D & Acki Kokotos",
+          "title": "Sirtos Madness",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 14,
+          "artist": "&ME",
+          "title": "1995",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 15,
+          "artist": "Pryda",
+          "title": "Igen",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 16,
+          "artist": "Jeremy Olander",
+          "title": "Andköln",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 17,
+          "artist": "Jeremy Olander",
+          "title": "Berns ID (Working Title)",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 18,
+          "artist": "Aril Brikha",
+          "title": "Winter",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        }
+      ],
+      "collectedOn": "2026-10-18",
+      "sourceSha256": "e1e8c2035fb4e5225b0b75b281b3354e96d1641806a1114998a6c23464ecb119",
+      "mediaUrl": "https://facebook.com/watch/?v=209087103621714"
+    },
+    {
+      "id": "london",
+      "title": "Anjunadeep Open Air · Londres · B2B Yotto",
+      "djs": [
+        "Jeremy Olander",
+        "Yotto"
+      ],
+      "date": "2019-08-11",
+      "dateType": "source",
+      "sourceUrl": "https://watchthedj.com/djvideos/yotto-b2b-jeremy-olander-live-at-anjunadeep-open-air-london-2019",
+      "sourceName": "WatchTheDJ · vidéo Beatport",
+      "coverage": "published",
+      "entries": [
+        {
+          "position": 1,
+          "artist": "Jeremy Olander",
+          "title": "Nobelberget Intro ID 01 (Working Title)",
+          "timeSeconds": 1,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 2,
+          "artist": "Jeremy Olander",
+          "title": "We Are Lost ID 02 (Working Title)",
+          "timeSeconds": 366,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 3,
+          "artist": "Yotto",
+          "title": "Shifter",
+          "timeSeconds": 723,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 4,
+          "artist": "ID",
+          "title": "ID",
+          "timeSeconds": 1023,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 5,
+          "artist": "Jeremy Olander",
+          "title": "Kailash",
+          "timeSeconds": 1323,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 5,
+          "artist": "Rampa",
+          "title": "Necessity",
+          "timeSeconds": 1516,
+          "layer": "overlay",
+          "status": "identified"
+        },
+        {
+          "position": 6,
+          "artist": "The DØ",
+          "title": "Dust It Off (Jeremy Olander Remix)",
+          "timeSeconds": 1691,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 7,
+          "artist": "Yotto",
+          "title": "The Owls",
+          "timeSeconds": 2006,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 7,
+          "artist": "Reflekt ft. Delline Bass",
+          "title": "Need To Feel Loved",
+          "timeSeconds": 2140,
+          "layer": "overlay",
+          "status": "identified"
+        },
+        {
+          "position": 8,
+          "artist": "Yotto",
+          "title": "Fire Walk",
+          "timeSeconds": 2322,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 9,
+          "artist": "Storken",
+          "title": "Lille Vals",
+          "timeSeconds": 2710,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 10,
+          "artist": "Guy J",
+          "title": "Heliscope",
+          "timeSeconds": 3045,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 11,
+          "artist": "Axel Boman",
+          "title": "ABBA 002",
+          "timeSeconds": 3429,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 12,
+          "artist": "C-Mos",
+          "title": "2 Million Ways (Axwell Remix)",
+          "timeSeconds": 3626,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 13,
+          "artist": "Jeremy Olander",
+          "title": "Norrsken",
+          "timeSeconds": 4150,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 14,
+          "artist": "Jeremy Olander",
+          "title": "Berns ID (Working Title)",
+          "timeSeconds": 4304,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 15,
+          "artist": "Yotto",
+          "title": "Nova",
+          "timeSeconds": 4600,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 16,
+          "artist": "Corona",
+          "title": "Rhythm Of The Night (Yotto Bootleg)",
+          "timeSeconds": 4904,
+          "layer": "main",
+          "status": "identified"
+        }
+      ],
+      "collectedOn": "2026-10-18",
+      "sourceSha256": "32a1648e82fdc289786ac9b25e87b686f3ff8b545d6568e354424abee4833226",
+      "mediaUrl": "https://www.youtube.com/watch?v=9EfEsqZDwmo"
+    },
+    {
+      "id": "rezident",
+      "title": "Magnetic Mix 129",
+      "djs": [
+        "Rezident"
+      ],
+      "date": "2020-12-24",
+      "dateType": "publication",
+      "sourceUrl": "https://magneticmag.com/2020/12/magnetic-mix-129-rezident/",
+      "sourceName": "Magnetic Magazine",
+      "coverage": "published",
+      "entries": [
+        {
+          "position": 1,
+          "artist": "Rezident",
+          "title": "Behind The Scenes",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 2,
+          "artist": "Boris Dlogusch & Cassara",
+          "title": "Traveller",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 3,
+          "artist": "Jeremy Olander",
+          "title": "Steps",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 4,
+          "artist": "Camelphat",
+          "title": "Cold Since ‘81",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 5,
+          "artist": "King Henry",
+          "title": "Remember (Rezident Remix)",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 6,
+          "artist": "Fabio Aurea & TOSHI",
+          "title": "Yini (Serge Devant Remix)",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 7,
+          "artist": "Cubicolor",
+          "title": "Points Beyond",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 8,
+          "artist": "ID",
+          "title": "ID",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 9,
+          "artist": "Rezident",
+          "title": "Finders Keepers",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 10,
+          "artist": "ID",
+          "title": "ID",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "unresolved"
+        },
+        {
+          "position": 11,
+          "artist": "Moonwalk",
+          "title": "Pink Clouds",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 12,
+          "artist": "Kollektiv Turnstrasse",
+          "title": "Jupiter Sunrise",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        },
+        {
+          "position": 13,
+          "artist": "Rezident",
+          "title": "Blurred",
+          "timeSeconds": null,
+          "layer": "main",
+          "status": "identified"
+        }
+      ],
+      "collectedOn": "2026-10-18",
+      "sourceSha256": "50af55d58d2bda04e0915e32b3232e594c97ecb9fe6cb79a843a2bb990af3ef6",
+      "mediaUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1167473602"
+    }
+  ]
+}

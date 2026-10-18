@@ -1,0 +1,326 @@
+{
+  "from": "2025-10-18",
+  "through": "2026-10-18",
+  "olanderYear": 2026,
+  "collectedOn": "2026-10-18",
+  "olanderSourcesChecked": 11,
+  "newOlanderSources": 0,
+  "targetProfiles": 42,
+  "profilesChecked": 43,
+  "candidateSources": 144,
+  "importedCandidateSources": 144,
+  "pendingSources": [],
+  "policy": "Identified main-layer tracks selected solely by Jeremy, without a named remix/edit/rework; parenthetical Original/Extended/Club Mix accepted. Joint selections excluded.",
+  "withoutProfile": [
+    {
+      "artist": "Mcgregor",
+      "title": "Reality",
+      "sourceUrl": "https://www.1001tracklists.com/tracklist/28btbps1/jeremy-olander-sauna-radio-stockholm-2026-07-04.html",
+      "trackId": null,
+      "position": 3
+    }
+  ],
+  "profiles": [
+    {
+      "artist": "Martinou",
+      "url": "https://www.1001tracklists.com/artist/martinou/tracklists.html",
+      "advertisedCount": "26",
+      "windowComplete": true,
+      "recentSources": 6
+    },
+    {
+      "artist": "Ryan Elliott",
+      "url": "https://www.1001tracklists.com/artist/ryan-elliott/tracklists.html",
+      "advertisedCount": "9",
+      "windowComplete": true,
+      "recentSources": 2
+    },
+    {
+      "artist": "Cleveland",
+      "url": "https://www.1001tracklists.com/artist/cleveland/tracklists.html",
+      "advertisedCount": "4",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "map.ache",
+      "url": "https://www.1001tracklists.com/artist/map.ache/tracklists.html",
+      "advertisedCount": "1",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Sebra Cruz",
+      "url": "https://www.1001tracklists.com/artist/sebra-cruz/tracklists.html",
+      "advertisedCount": "3",
+      "windowComplete": true,
+      "recentSources": 1
+    },
+    {
+      "artist": "J.Singh",
+      "url": "https://www.1001tracklists.com/artist/j.singh/tracklists.html",
+      "advertisedCount": "0",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Fausto Messina",
+      "url": "https://www.1001tracklists.com/artist/fausto-messina/tracklists.html",
+      "advertisedCount": "0",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Tin Man",
+      "url": "https://www.1001tracklists.com/artist/tin-man/tracklists.html",
+      "advertisedCount": "2",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Nuno Dos Santos",
+      "url": "https://www.1001tracklists.com/artist/nuno-dos-santos/tracklists.html",
+      "advertisedCount": "13",
+      "windowComplete": true,
+      "recentSources": 1
+    },
+    {
+      "artist": "Priori",
+      "url": "https://www.1001tracklists.com/artist/priori/tracklists.html",
+      "advertisedCount": "9",
+      "windowComplete": true,
+      "recentSources": 1
+    },
+    {
+      "artist": "Stephan Hinz",
+      "url": "https://www.1001tracklists.com/artist/stephan-hinz/tracklists.html",
+      "advertisedCount": "26",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Black Eyes",
+      "url": "https://www.1001tracklists.com/artist/black-eyes/tracklists.html",
+      "advertisedCount": "0",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Edmondson",
+      "url": "https://www.1001tracklists.com/artist/edmondson/tracklists.html",
+      "advertisedCount": "0",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Allen (IT)",
+      "url": "https://www.1001tracklists.com/artist/allen-(it)/tracklists.html",
+      "advertisedCount": "0",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Filix",
+      "url": "https://www.1001tracklists.com/artist/filix/tracklists.html",
+      "advertisedCount": "0",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "OLING",
+      "url": "https://www.1001tracklists.com/artist/oling/tracklists.html",
+      "advertisedCount": "30",
+      "windowComplete": true,
+      "recentSources": 13
+    },
+    {
+      "artist": "DJ Balduin",
+      "url": "https://www.1001tracklists.com/artist/dj-balduin/tracklists.html",
+      "advertisedCount": "0",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Pig&Dan",
+      "url": "https://www.1001tracklists.com/artist/pig&dan/tracklists.html",
+      "advertisedCount": "105",
+      "windowComplete": true,
+      "recentSources": 3
+    },
+    {
+      "artist": "Rachel Lyn",
+      "url": "https://www.1001tracklists.com/artist/rachel-lyn/tracklists.html",
+      "advertisedCount": "0",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Paperclip People",
+      "url": "https://www.1001tracklists.com/artist/paperclip-people/tracklists.html",
+      "advertisedCount": "0",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "M-High",
+      "url": "https://www.1001tracklists.com/artist/m-high/tracklists.html",
+      "advertisedCount": "6",
+      "windowComplete": true,
+      "recentSources": 3
+    },
+    {
+      "artist": "Aera",
+      "url": "https://www.1001tracklists.com/artist/aera/tracklists.html",
+      "advertisedCount": "21",
+      "windowComplete": true,
+      "recentSources": 1
+    },
+    {
+      "artist": "Tim Engelhardt",
+      "url": "https://www.1001tracklists.com/artist/tim-engelhardt/tracklists.html",
+      "advertisedCount": "44",
+      "windowComplete": true,
+      "recentSources": 2
+    },
+    {
+      "artist": "BOg",
+      "url": "https://www.1001tracklists.com/artist/bog/tracklists.html",
+      "advertisedCount": "38",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Applescal",
+      "url": "https://www.1001tracklists.com/artist/applescal/tracklists.html",
+      "advertisedCount": "13",
+      "windowComplete": true,
+      "recentSources": 1
+    },
+    {
+      "artist": "Agustin Giri",
+      "url": "https://www.1001tracklists.com/artist/agustin-giri/tracklists.html",
+      "advertisedCount": "12",
+      "windowComplete": true,
+      "recentSources": 1
+    },
+    {
+      "artist": "Last Men On Earth",
+      "url": "https://www.1001tracklists.com/artist/last-men-on-earth/tracklists.html",
+      "advertisedCount": "11",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Pryda",
+      "url": "https://www.1001tracklists.com/artist/pryda/tracklists.html",
+      "advertisedCount": "16",
+      "windowComplete": true,
+      "recentSources": 1
+    },
+    {
+      "artist": "Butch",
+      "url": "https://www.1001tracklists.com/artist/butch/tracklists.html",
+      "advertisedCount": "41",
+      "windowComplete": true,
+      "recentSources": 1
+    },
+    {
+      "artist": "Cornucopia",
+      "url": "https://www.1001tracklists.com/artist/cornucopia/tracklists.html",
+      "advertisedCount": "1",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Arno Cost",
+      "url": "https://www.1001tracklists.com/artist/arno-cost/tracklists.html",
+      "advertisedCount": "110",
+      "windowComplete": true,
+      "recentSources": 2
+    },
+    {
+      "artist": "Axwell",
+      "url": "https://www.1001tracklists.com/artist/axwell/tracklists.html",
+      "advertisedCount": "254",
+      "windowComplete": true,
+      "recentSources": 19
+    },
+    {
+      "artist": "Eric Prydz",
+      "url": "https://www.1001tracklists.com/artist/eric-prydz/tracklists.html",
+      "advertisedCount": "734",
+      "windowComplete": true,
+      "recentSources": 63
+    },
+    {
+      "artist": "Axwell & Eric Prydz pres. Axer",
+      "url": "https://www.1001tracklists.com/artist/3vn68k4/axwell-&-eric-prydz-pres.-axer/tracklists.html",
+      "advertisedCount": "0",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Sébastien Léger",
+      "url": "https://www.1001tracklists.com/artist/sebastien-leger/tracklists.html",
+      "advertisedCount": "208",
+      "windowComplete": true,
+      "recentSources": 17
+    },
+    {
+      "artist": "Andy Chatterley",
+      "url": "https://www.1001tracklists.com/artist/andy-chatterley/tracklists.html",
+      "advertisedCount": "0",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Jerry Ropero",
+      "url": "https://www.1001tracklists.com/artist/jerry-ropero/tracklists.html",
+      "advertisedCount": "6",
+      "windowComplete": true,
+      "recentSources": 1
+    },
+    {
+      "artist": "Cozi",
+      "url": "https://www.1001tracklists.com/artist/cozi/tracklists.html",
+      "advertisedCount": "0",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Erik Luebs",
+      "url": "https://www.1001tracklists.com/artist/erik-luebs/tracklists.html",
+      "advertisedCount": "0",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Yansima",
+      "url": "https://www.1001tracklists.com/artist/yansima/tracklists.html",
+      "advertisedCount": "0",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Pierre Marty",
+      "url": "https://www.1001tracklists.com/artist/pierre-marty/tracklists.html",
+      "advertisedCount": "0",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Chymera",
+      "url": "https://www.1001tracklists.com/artist/chymera/tracklists.html",
+      "advertisedCount": "4",
+      "windowComplete": true,
+      "recentSources": 0
+    },
+    {
+      "artist": "Guy J",
+      "url": "https://www.1001tracklists.com/artist/guy-j/tracklists.html",
+      "advertisedCount": "198",
+      "windowComplete": true,
+      "recentSources": 5
+    }
+  ]
+}

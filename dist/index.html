@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore transitions in sets by Jeremy Olander, Mattheis and Fahlberg, and find the passages to listen to.">
+  <meta name="theme-color" content="#ffffff"><title>Olander Atlas — Explore transitions</title>
+  <link rel="icon" href="icon.svg?v=f8cf39bea03d" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=903d18e8164c">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="Aller au contenu">Skip to content</a>
+  <header class="atlas-header">
+    <a class="brand" href="#explorer" aria-label="Olander Atlas, home" data-i18n-aria-label="Olander Atlas, accueil">atlas<span class="brand-dot" aria-hidden="true"></span></a>
+    <button class="icon-button language-button" id="language-button" aria-label="Language: English" title="Language: English" aria-haspopup="dialog" aria-controls="language-dialog"><img id="language-flag" class="language-flag" src="language-en.svg?v=97344d68ac2b" width="24" height="16" alt=""></button>
+    <details class="tools-menu"><summary data-i18n="Outils">Tools</summary><div><button class="nav" id="open-collection" data-i18n="Tous les sets">All sets</button><button class="nav" id="open-compare" data-i18n="Comparer deux sets">Compare two sets</button><button class="nav" id="open-data" data-i18n="Importer / exporter">Import / export</button></div></details>
+  </header>
+  <main id="main" class="atlas-workspace" tabindex="-1"></main>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="language-dialog" class="language-dialog" aria-labelledby="language-title">
+    <div class="dialog-header"><h2 id="language-title" data-i18n="Langue">Language</h2><button class="icon-button" id="close-language" aria-label="Close" data-i18n-aria-label="Fermer"><svg class="ui-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M5 15 15 5"/></svg></button></div>
+    <div class="language-options">
+      <button class="language-option" data-language="en" aria-pressed="true"><img class="language-flag" src="language-en.svg?v=97344d68ac2b" width="24" height="16" alt=""><span lang="en">English</span><svg class="ui-icon language-check" viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8"/></svg></button>
+      <button class="language-option" data-language="fr" aria-pressed="false"><img class="language-flag" src="language-fr.svg?v=4da4bc02dcdf" width="24" height="16" alt=""><span lang="fr">Français</span><svg class="ui-icon language-check" viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8"/></svg></button>
+      <button class="language-option" data-language="ko" aria-pressed="false"><img class="language-flag" src="language-ko.svg?v=08434603a453" width="24" height="16" alt=""><span lang="ko">한국어</span><svg class="ui-icon language-check" viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8"/></svg></button>
+    </div>
+  </dialog>
+  <dialog id="data-dialog" aria-labelledby="data-title">
+    <div class="dialog-header"><div><h2 id="data-title" data-i18n="Ajouter une tracklist">Add a tracklist</h2></div><button class="icon-button" id="close-data" aria-label="Close" data-i18n-aria-label="Fermer"><svg class="ui-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M5 15 15 5"/></svg></button></div>
+    <div class="dialog-tabs"><button id="paste-tab" class="active" data-i18n="Coller une tracklist">Paste a tracklist</button><button id="json-tab" data-i18n="Importer un fichier">Import a file</button></div>
+    <form id="paste-form">
+      <label><span data-i18n="Titre du set">Set title</span><input name="setTitle" required placeholder="Set or event name" data-i18n-placeholder="Nom du set ou de l’événement" maxlength="400"></label>
+      <div class="form-row"><label><span data-i18n="DJs">DJs</span><input name="djs" required value="Jeremy Olander" placeholder="Separate DJs with a comma" data-i18n-placeholder="Séparer les DJs par une virgule"></label><label><span data-i18n="Date indiquée par la source">Source date</span><input name="date" type="date"></label></div>
+      <label><span data-i18n="Lien de la tracklist">Tracklist URL</span><input name="sourceUrl" type="url" required placeholder="https://…"></label>
+      <label><span data-i18n="Lien d’écoute">Listening URL</span> <span class="optional" data-i18n="facultatif">optional</span><input name="mediaUrl" type="url" placeholder="https://www.youtube.com/watch?v=…"></label>
+      <label><span data-i18n="Tracklist dans l’ordre">Tracklist in order</span><textarea name="tracklist" rows="7" required data-i18n-placeholder="import.example" placeholder="01. 00:00 Artist - Track&#10;02. 05:30 Artist - Track (Remix)&#10;03. 10:15 ID - ID&#10;w/ 11:00 Artist - Vocal"></textarea></label>
+      <p class="form-help" data-i18n="Garde les IDs et les numéros d’origine. Les lignes « w/ » sont conservées comme superpositions.">Keep IDs and original position numbers. Lines starting with “w/” are retained as overlays.</p>
+      <div class="form-error" id="paste-error" role="alert"></div><button class="button primary" type="submit"><span data-i18n="Ajouter à ma collection">Add to my collection</span> <svg class="ui-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10"/></svg></button>
+    </form>
+    <div id="json-panel" hidden><p data-i18n="Importe une collection exportée depuis cet outil. Les sets déjà présents seront mis à jour.">Import a collection exported from this tool. Existing sets will be updated.</p><label class="file-label"><span data-i18n="Choisir un fichier .json">Choose a .json file</span><input type="file" id="file-input" accept=".json,application/json"></label><div class="form-error" id="file-error" role="alert"></div><button class="button outline" id="download-format" data-i18n="Télécharger le format d’import">Download import template</button></div>
+    <div class="dialog-note"><strong data-i18n="Les IDs et les versions sont conservés.">IDs and versions are preserved.</strong> <span data-i18n="import.note">Existing sources will be updated. Suggested but unconfirmed identifications on 1001Tracklists do not create links.</span><br><span data-i18n="Les ajouts sont enregistrés uniquement dans ce navigateur.">Additions are saved only in this browser.</span></div>
+    <button class="text-button" id="export"><span data-i18n="Exporter toute ma collection">Export my collection</span> <svg class="ui-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v13m-5-5 5 5 5-5"/></svg></button>
+  </dialog>
+  <script type="module" src="app.mjs?v=c6b167ae0f9d"></script>
+</body></html>

@@ -1,0 +1,18 @@
+collector/cache/
+__pycache__/
+*.tar.gz
+*.zip
+.DS_Store
+
+.impeccable/review/*.png
+
+# Local credentials, editor state and imports are never part of a release.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+node_modules/
+.openai/
+.impeccable/
+imports/
