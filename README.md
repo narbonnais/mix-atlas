@@ -1,4 +1,4 @@
-# Atlas
+# Mix Atlas
 
 Explore music through published DJ tracklists: find who played a track, see its full set in order, and inspect the tracks before and after it. Includes search, copy artist/title, source and listening links, transition graphs, set comparison, and English (default), French and Korean.
 
@@ -47,8 +47,8 @@ To publish additions made in your browser:
 3. Merge it into the bundled collection from Terminal:
 
    ```sh
-   npm run import-setlists -- /path/to/olander-atlas-collection.json --dry-run
-   npm run import-setlists -- /path/to/olander-atlas-collection.json
+   npm run import-setlists -- /path/to/mix-atlas-collection.json --dry-run
+   npm run import-setlists -- /path/to/mix-atlas-collection.json
    npm test
    ```
 

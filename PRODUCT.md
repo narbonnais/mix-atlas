@@ -1,5 +1,5 @@
 <!-- impeccable:product-schema 1 -->
-# Olander Atlas
+# Mix Atlas
 
 Platform: web
 

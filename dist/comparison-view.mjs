@@ -1,8 +1,8 @@
-import {t,count,number,sourceNote} from './i18n.mjs?v=0801edf60593';
+import {t,count,number,sourceNote} from './i18n.mjs?v=013c303142ac';
 import {compareSets} from './compare.mjs?v=77035d607783';
 import {trackKey,occurrences,timeLabel,listenUrl} from './core.mjs?v=f639e478edea';
-import {trackCopyButton} from './copy-track.mjs?v=f60335cca9c4';
-import {setTracklistRows,centerSelectedTrack} from './set-tracklist.mjs?v=4297deb50a58';
+import {trackCopyButton} from './copy-track.mjs?v=e24accac4595';
+import {setTracklistRows,centerSelectedTrack} from './set-tracklist.mjs?v=66f292d0fbd9';
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 export function mountComparison({root,data,leftUrl,initialState,onSelect,onClose}){

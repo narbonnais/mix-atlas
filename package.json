@@ -1,6 +1,6 @@
 {
-  "name": "olander-atlas",
-  "version": "1.0.0",
+  "name": "mix-atlas",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "engines": {"node": ">=24"},

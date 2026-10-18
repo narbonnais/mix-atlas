@@ -12,9 +12,9 @@ const entries=[
  ['Titre du set à remplacer','Replace with set title','세트 제목을 입력하세요'],['Artiste à remplacer','Artist','아티스트'],['Morceau à remplacer','Track','곡명'],
  ['Langue','Language','언어'],
  ['Aller au contenu','Skip to content','본문으로 건너뛰기'],
- ['Olander Atlas, accueil','Olander Atlas, home','Olander Atlas 홈'],
- ['Olander Atlas — Explorer les transitions','Olander Atlas — Explore transitions','Olander Atlas — 트랜지션 탐색'],
- ['Explorer les enchaînements des sets de Jeremy Olander, Mattheis et Fahlberg et retrouver les passages à écouter.','Explore transitions in sets by Jeremy Olander, Mattheis and Fahlberg, and find the passages to listen to.','Jeremy Olander, Mattheis, Fahlberg의 DJ 세트에서 트랜지션을 살펴보고 해당 구간을 들어보세요.'],
+ ['Mix Atlas, accueil','Mix Atlas, home','Mix Atlas 홈'],
+ ['app.name','Mix Atlas','Mix Atlas','Mix Atlas'],
+ ['app.description','Discover tracks through DJ sets. Explore tracklists, find who played a track, and see what came before and after.','DJ 세트에서 새로운 곡을 발견하세요. 트랙리스트를 살펴보고, 누가 그 곡을 틀었는지와 앞뒤로 어떤 곡을 연결했는지 확인하세요.','Découvrez des morceaux à travers les sets de DJs. Explorez les tracklists, retrouvez qui a joué un titre et quels morceaux l’entourent.'],
  ['DJ de départ','Starting DJ','기준 DJ'],['Outils','Tools','도구'],['Tous les sets','All sets','모든 세트'],
  ['Comparer deux sets','Compare two sets','두 세트 비교'],['Importer / exporter','Import / export','가져오기 / 내보내기'],
  ['Explorer la collection','Explore the collection','컬렉션 탐색'],['Recherche dans la collection','Search the collection','컬렉션 검색'],
@@ -80,5 +80,9 @@ export function applyTranslations(root=globalThis.document){
  if(!root)return;
  root.querySelectorAll('[data-i18n]').forEach(el=>el.textContent=t(el.dataset.i18n));
  for(const attr of ['aria-label','placeholder','title'])root.querySelectorAll(`[data-i18n-${attr}]`).forEach(el=>el.setAttribute(attr,t(el.getAttribute('data-i18n-'+attr))));
- if(typeof document!=='undefined'&&root===document){document.title=t('Olander Atlas — Explorer les transitions');document.querySelector('meta[name="description"]')?.setAttribute('content',t('Explorer les enchaînements des sets de Jeremy Olander, Mattheis et Fahlberg et retrouver les passages à écouter.'));}
+ if(typeof document!=='undefined'&&root===document){
+  document.title=t('app.name');
+  document.querySelectorAll('meta[name="description"],meta[property="og:description"],meta[name="twitter:description"]').forEach(meta=>meta.setAttribute('content',t('app.description')));
+  document.querySelector('meta[property="og:locale"]')?.setAttribute('content',locale().replace('-','_'));
+ }
 }

@@ -1,9 +1,9 @@
-import {t,count,LANGUAGES,getLanguage,readLanguage,setLanguage,applyTranslations,translateError} from './i18n.mjs?v=0801edf60593';
-import {installTrackCopy} from './copy-track.mjs?v=f60335cca9c4';
+import {t,count,LANGUAGES,getLanguage,readLanguage,setLanguage,applyTranslations,translateError} from './i18n.mjs?v=013c303142ac';
+import {installTrackCopy} from './copy-track.mjs?v=e24accac4595';
 import {SEED} from './data.mjs?v=51873abdf950';
 import {parseWorkspaceRoute,formatWorkspaceRoute,FOCUS_DJS} from './route.mjs?v=13ffb61584f0';
-import {mountWorkspace} from './workspace-view.mjs?v=63e1a4fdfa02';
-import {mountComparison} from './comparison-view.mjs?v=320028beaae9';
+import {mountWorkspace} from './workspace-view.mjs?v=89940b381640';
+import {mountComparison} from './comparison-view.mjs?v=5a58673aff20';
 import {validateDataset,mergeDatasets,restoreCollection,parseTracklist,norm} from './core.mjs?v=f639e478edea';
 const $=id=>document.getElementById(id);
 let languageStorage;try{languageStorage=localStorage;}catch{}
@@ -51,8 +51,8 @@ function importTab(which){const pasted=which==='paste';$('paste-form').hidden=!p
 $('paste-tab').onclick=()=>importTab('paste');$('json-tab').onclick=()=>importTab('json');
 $('paste-form').onsubmit=e=>{e.preventDefault();$('paste-error').textContent='';const f=new FormData(e.target);try{addData({schemaVersion:1,sets:[{title:f.get('setTitle'),djs:f.get('djs').split(',').map(x=>x.trim()).filter(Boolean),date:f.get('date')||null,sourceUrl:f.get('sourceUrl'),mediaUrl:f.get('mediaUrl')||null,sourceName:'Personal import',entries:parseTracklist(f.get('tracklist'))}]});e.target.reset();}catch(error){$('paste-error').textContent=translateError(error);}};
 $('file-input').onchange=async e=>{const file=e.target.files[0];if(!file)return;$('file-error').textContent='';try{if(file.size>10000000)throw new Error('Le fichier dépasse 10 Mo.');addData(JSON.parse(await file.text()));e.target.value='';}catch(error){$('file-error').textContent=error instanceof SyntaxError?t('Le fichier ne contient pas une collection JSON valide.'):translateError(error);}};
-$('export').onclick=()=>download(data,'olander-atlas-collection.json');
-$('download-format').onclick=()=>download({schemaVersion:1,sets:[{title:t('Titre du set à remplacer'),djs:['Jeremy Olander'],date:null,sourceUrl:'https://example.com/a-remplacer',mediaUrl:null,entries:[{position:1,artist:t('Artiste à remplacer'),title:t('Morceau à remplacer'),timeSeconds:null,layer:'main',status:'identified'}]}]},'olander-atlas-import-template.json');
+$('export').onclick=()=>download(data,'mix-atlas-collection.json');
+$('download-format').onclick=()=>download({schemaVersion:1,sets:[{title:t('Titre du set à remplacer'),djs:['Jeremy Olander'],date:null,sourceUrl:'https://example.com/a-remplacer',mediaUrl:null,entries:[{position:1,artist:t('Artiste à remplacer'),title:t('Morceau à remplacer'),timeSeconds:null,layer:'main',status:'identified'}]}]},'mix-atlas-import-template.json');
 
 function syncLanguagePicker(){
  const language=getLanguage(),label=`${t('Langue')}: ${LANGUAGES[language]}`;

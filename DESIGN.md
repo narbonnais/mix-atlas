@@ -1,5 +1,5 @@
 ---
-name: Olander Atlas
+name: Mix Atlas
 description: A quiet interface for finding published DJ transitions.
 colors:
   background: "#ffffff"
@@ -38,7 +38,7 @@ spacing:
   page: "44px"
 ---
 
-# Design System: Olander Atlas
+# Design System: Mix Atlas
 
 ## Overview
 
