@@ -11,7 +11,13 @@ export function prepareSite({root=ROOT,check=false}={}){
  const dist=resolve(root,'dist'),files=new Map(),visiting=new Set();
  const dataset=JSON.parse(readFileSync(resolve(dist,'dataset.json'),'utf8'));
  validateDataset(dataset);
- const data='export const SEED = '+JSON.stringify(dataset,null,2)+';\n';
+ const data=`export const DATASET_URL=new URL('./dataset.json?v=${hash(readFileSync(resolve(dist,'dataset.json')))}',import.meta.url);
+export async function loadCollection(fetcher=fetch){
+ const response=await fetcher(DATASET_URL);
+ if(!response.ok)throw new Error('Collection load failed.');
+ return response.json();
+}
+`;
  const moduleSource=name=>name==='data.mjs'?data:readFileSync(resolve(dist,name),'utf8');
  function module(name){
   if(files.has(name))return files.get(name);

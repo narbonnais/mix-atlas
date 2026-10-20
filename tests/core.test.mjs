@@ -40,14 +40,14 @@ test('text parser retains numbers, times, gaps, overlays and unresolved IDs',()=
 });
 test('real sample: Steps closes City Hall; expansion adds Rezident evidence',()=>{
   const d=validateDataset(JSON.parse(readFileSync(new URL('../collector/initial-dataset.json',import.meta.url))));
-  assert.equal(corpus(d,false).length,3);assert.equal(corpus(d,true).length,4);
+  assert.equal(corpus(d,false,'Jeremy Olander').length,3);assert.equal(corpus(d,true,'Jeremy Olander').length,4);
   const steps=catalog(d.sets).find(t=>t.title==='Steps');
-  const o=occurrences(corpus(d,false),steps.id);assert.equal(o.length,1);assert.equal(o[0].after,null);
+  const o=occurrences(corpus(d,false,'Jeremy Olander'),steps.id);assert.equal(o.length,1);assert.equal(o[0].after,null);
   assert.equal(o[0].before.title,'Steps (Cinematic Edit)');
   assert.equal(o[0].entry.timeSeconds,9916);
   assert.match(listenUrl(o[0].set,o[0]),/t=9716/);
-  assert.equal(occurrences(corpus(d,true),steps.id).length,2);
-  const peers=sharedRepertoire(d);assert.equal(peers.find(p=>p.dj==='Rezident').shared.length,1);
+  assert.equal(occurrences(corpus(d,true,'Jeremy Olander'),steps.id).length,2);
+  const peers=sharedRepertoire(d,'Jeremy Olander');assert.equal(peers.find(p=>p.dj==='Rezident').shared.length,1);
   assert.equal(peers.find(p=>p.dj==='Yotto').shared.length,0);
 });
 test('stable track IDs group variants of a spelling and bridge an exact off-site name',()=>{
@@ -71,7 +71,7 @@ test('requested sets have two confirmed common tracks and four provisional label
   const c=compareSets(a,b);
   assert.equal(c.common.length,2);assert.equal(c.provisional.length,4);
   assert.equal(c.left.cadence,289);assert.equal(c.right.cadence,303);
-  assert.equal(c.left.jeremyArtistCredits,4);assert.equal(c.right.jeremyArtistCredits,20);
+  assert.ok(c.left.resolved<=c.left.positions);assert.ok(c.right.resolved<=c.right.positions);
   const song=b.entries.find(e=>e.title==='Losing You (Jeremy Olander Edit)');
   const o=occurrences([b],trackKey(song))[0];assert.equal(o.before.title,'SCR Guestmix ID 02');assert.equal(o.after.title,'Kameleon');
 });
@@ -98,7 +98,7 @@ test('Mattheis has an independent corpus and recordings without tracklists creat
   assert.equal(catalog(m).length,32);assert.equal(transitions(m).length,25);
   assert.equal(d.recordings.length,2);
   assert.equal(d.recordings.find(r=>r.year===2024).publishedOn,'2025-06-24');
-  assert.equal(corpus(d,false).length,209);
+  assert.equal(corpus(d,false,'Jeremy Olander').length,209);
 });
 test('OpenLab imports only the Mattheis portion and credits its transitions to him',()=>{
   const d=validateDataset(JSON.parse(readFileSync(new URL('../dist/dataset.json',import.meta.url))));

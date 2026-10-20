@@ -1,5 +1,6 @@
 """Import dated Layer J and CVMRN browser snapshots with explicit DJ scope."""
 import argparse
+from publish import prepare_site
 import json
 import re
 from pathlib import Path
@@ -54,15 +55,7 @@ def main():
                   'sets': incoming, 'artistCollections': coverages}
     for path, payload in [('dist/dataset.json', data), ('collector/recent-djs-dataset.json', additional)]:
         (ROOT / path).write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n')
-    (ROOT / 'dist/data.mjs').write_text('export const SEED = ' + json.dumps(data, ensure_ascii=False, indent=2) + ';\n')
-    route = ROOT / 'dist/route.mjs'
-    text = route.read_text()
-    match = re.search(r'export const FOCUS_DJS = (\[[^;]+\]);', text)
-    names = json.loads(match[1])
-    for artist in artists:
-        if artist not in names:
-            names.append(artist)
-    route.write_text(text[:match.start(1)] + json.dumps(names, ensure_ascii=False) + text[match.end(1):])
+    prepare_site(ROOT)
     print(json.dumps({'newSets': len(new_urls), 'sources': len(incoming), 'entries': sum(len(s['entries']) for s in incoming), 'totalSets': len(data['sets'])}))
 
 

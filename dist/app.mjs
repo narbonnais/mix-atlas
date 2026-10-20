@@ -1,16 +1,21 @@
-import {t,count,LANGUAGES,getLanguage,readLanguage,setLanguage,applyTranslations,translateError} from './i18n.mjs?v=d748e838fa62';
-import {installTrackCopy} from './copy-track.mjs?v=522cda602a41';
-import {SEED} from './data.mjs?v=dddc305e0306';
-import {parseWorkspaceRoute,formatWorkspaceRoute} from './route.mjs?v=a50bb487b14c';
-import {mountWorkspace} from './workspace-view.mjs?v=9cecccbc92ba';
-import {mountComparison} from './comparison-view.mjs?v=7edacc65b14e';
-import {validateDataset,mergeDatasets,restoreCollection,parseTracklist} from './core.mjs?v=f639e478edea';
+import {t,count,LANGUAGES,getLanguage,readLanguage,setLanguage,applyTranslations,translateError} from './i18n.mjs?v=9ce790547f41';
+import {installTrackCopy} from './copy-track.mjs?v=350a954c381e';
+import {loadCollection} from './data.mjs?v=04703d54ce2e';
+import {parseWorkspaceRoute,formatWorkspaceRoute} from './route.mjs?v=ecdf53f500bf';
+import {mountWorkspace} from './workspace-view.mjs?v=929d68d92878';
+import {mountComparison} from './comparison-view.mjs?v=2e5b97586f7b';
+import {collectionToCsv,parseCollectionFile} from './collection-format.mjs?v=947fdc3a8e58';
+import {readCollection,saveCollection} from './collection-storage.mjs?v=eee7041911a1';
+import {validateDataset,mergeDatasets,parseTracklist} from './core.mjs?v=17a220c19fc2';
 const $=id=>document.getElementById(id);
 let languageStorage;try{languageStorage=localStorage;}catch{}
-setLanguage(readLanguage(languageStorage));applyTranslations();syncLanguagePicker();
-let data=validateDataset(SEED),state=parseWorkspaceRoute(location.hash),workspace,comparison,storageAvailable=true;
+setLanguage(readLanguage(languageStorage));applyTranslations();
+async function start(){
+syncLanguagePicker();
+$('main').innerHTML=`<p class="field-hint" role="status">${t('Chargement de la collection…')}</p>`;
+let data=validateDataset(await loadCollection()),state=parseWorkspaceRoute(location.hash),workspace,comparison,storageAvailable=true;
 history.scrollRestoration='manual';
-try{const saved=localStorage.getItem('olander-atlas-v1');if(saved)data=restoreCollection(data,validateDataset(JSON.parse(saved)));}catch{storageAvailable=false;}
+try{data=readCollection(data,localStorage);}catch{storageAvailable=false;}
 function notify(message){$('toast').textContent=message;$('toast').hidden=false;clearTimeout(notify.timer);notify.timer=setTimeout(()=>$('toast').hidden=true,6000);}
 installTrackCopy({onCopied:text=>notify(t('Copié : {track}',{track:text})),onError:()=>notify(t('Copie bloquée. Réessaie ou copie le texte manuellement.'))});
 function updateRoute(replace=false){const hash=formatWorkspaceRoute(state);if(hash!==location.hash)history[replace?'replaceState':'pushState'](null,'',hash);}
@@ -33,11 +38,11 @@ function mount({preservePane=false,comparisonState=null}={}){
  if(state.tool==='compare')openComparison(undefined,comparisonState);
  if(preservePane){openDetails.forEach(id=>{if($(id))$(id).open=true;});if($('workspace-results'))$('workspace-results').scrollTop=resultScroll;window.scrollTo({top:scroll,behavior:'instant'});}
 }
-function download(payload,name){const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+function download(payload,name){const csv=name.endsWith('.csv');const blob=new Blob([csv?collectionToCsv(payload):JSON.stringify(payload,null,2)],{type:csv?'text/csv;charset=utf-8':'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 function addData(payload){
  const imported=validateDataset(payload), result=mergeDatasets(data,imported);data=result.dataset;
  let persisted=false;
- try{localStorage.setItem('olander-atlas-v1',JSON.stringify(data));persisted=true;storageAvailable=true;}catch{storageAvailable=false;}
+ try{saveCollection(data,localStorage);persisted=true;storageAvailable=true;}catch{storageAvailable=false;}
  mount();$('data-dialog').close();
  notify(t('import.success',{added:count('added',result.added),updated:count('updated',result.updated),storage:t(persisted?'Enregistré dans ce navigateur.':'Mémoire temporaire : exporte ta collection pour la conserver.')}));
 }
@@ -50,9 +55,10 @@ $('open-data').onclick=()=>$('data-dialog').showModal();$('close-data').onclick=
 function importTab(which){const pasted=which==='paste';$('paste-form').hidden=!pasted;$('json-panel').hidden=pasted;$('paste-tab').classList.toggle('active',pasted);$('json-tab').classList.toggle('active',!pasted);}
 $('paste-tab').onclick=()=>importTab('paste');$('json-tab').onclick=()=>importTab('json');
 $('paste-form').onsubmit=e=>{e.preventDefault();$('paste-error').textContent='';const f=new FormData(e.target);try{addData({schemaVersion:1,sets:[{title:f.get('setTitle'),djs:f.get('djs').split(',').map(x=>x.trim()).filter(Boolean),date:f.get('date')||null,sourceUrl:f.get('sourceUrl'),mediaUrl:f.get('mediaUrl')||null,sourceName:'Personal import',entries:parseTracklist(f.get('tracklist'))}]});e.target.reset();}catch(error){$('paste-error').textContent=translateError(error);}};
-$('file-input').onchange=async e=>{const file=e.target.files[0];if(!file)return;$('file-error').textContent='';try{if(file.size>10000000)throw new Error('Le fichier dépasse 10 Mo.');addData(JSON.parse(await file.text()));e.target.value='';}catch(error){$('file-error').textContent=error instanceof SyntaxError?t('Le fichier ne contient pas une collection JSON valide.'):translateError(error);}};
-$('export').onclick=()=>download(data,'mix-atlas-collection.json');
-$('download-format').onclick=()=>download({schemaVersion:1,sets:[{title:t('Titre du set à remplacer'),djs:['DJ'],date:null,sourceUrl:'https://example.com/a-remplacer',mediaUrl:null,entries:[{position:1,artist:t('Artiste à remplacer'),title:t('Morceau à remplacer'),timeSeconds:null,layer:'main',status:'identified'}]}]},'mix-atlas-import-template.json');
+$('file-input').onchange=async e=>{const file=e.target.files[0];if(!file)return;$('file-error').textContent='';try{if(file.size>10000000)throw new Error('Le fichier dépasse 10 Mo.');addData(parseCollectionFile(await file.text(),file.name));e.target.value='';}catch(error){$('file-error').textContent=translateError(error);}};
+$('export').onclick=()=>download(data,'mix-atlas-collection.csv');
+$('export-json').onclick=()=>download(data,'mix-atlas-collection.json');
+$('download-format').onclick=()=>download({schemaVersion:1,sets:[{title:t('Titre du set à remplacer'),djs:['DJ'],date:null,sourceUrl:'https://example.com/a-remplacer',mediaUrl:null,entries:[{position:1,artist:t('Artiste à remplacer'),title:t('Morceau à remplacer'),timeSeconds:null,layer:'main',status:'identified'}]}]},'mix-atlas-import-template.csv');
 
 function syncLanguagePicker(){
  const language=getLanguage(),label=`${t('Langue')}: ${LANGUAGES[language]}`;
@@ -77,3 +83,9 @@ document.querySelectorAll('[data-language]').forEach(button=>button.onclick=()=>
 window.addEventListener('popstate',()=>{state=parseWorkspaceRoute(location.hash);mount();});
 mount();
 if(!storageAvailable)notify(t('Le stockage local est indisponible ou la sauvegarde est illisible. La collection initiale reste accessible.'));
+
+}
+start().catch(()=>{
+ $('main').innerHTML=`<div class="detail-empty" role="alert"><p>${t('Impossible de charger la collection. Réessaie.')}</p><button class="button outline" id="retry-load">${t('Réessayer')}</button></div>`;
+ $('retry-load').onclick=()=>location.reload();
+});

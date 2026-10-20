@@ -41,7 +41,7 @@ test('missing positions and performer boundaries remain explicit and source text
 
 test('Lille Vals in Bijou retains the whole published set around the selected track',()=>{
  const data=validateDataset(JSON.parse(readFileSync(new URL('../dist/dataset.json',import.meta.url))));
- const track=otherSelections(data).find(t=>t.title==='Lille Vals'&&t.artist==='Storken');
+ const track=otherSelections(data,'Jeremy Olander').find(t=>t.title==='Lille Vals'&&t.artist==='Storken');
  const hit=track.evidence.find(h=>h.set.title.includes('Bijou Boston'));
  const rows=setTracklistRows(hit.set,hit.entry);
  assert.equal((rows.match(/class="set-track[ "]/g)??[]).length,hit.set.entries.length);

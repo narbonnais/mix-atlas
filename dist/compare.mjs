@@ -1,4 +1,4 @@
-import {trackKey,unresolved,norm} from './core.mjs?v=f639e478edea';
+import {trackKey,unresolved,norm} from './core.mjs?v=17a220c19fc2';
 export function compareSets(left,right){
  const main=s=>s.entries.filter(e=>e.layer==='main');
  const a=main(left),b=main(right),knownB=new Map(b.filter(e=>!unresolved(e)).map(e=>[trackKey(e),e]));
@@ -14,6 +14,13 @@ export function compareSets(left,right){
  }
  const stats=(s,entries)=>({positions:entries.length,sourceIdentified:s.sourceIdentifiedPositions,
   resolved:entries.filter(e=>!unresolved(e)).length,duration:s.durationSeconds,
-  cadence:cadence(entries),jeremyArtistCredits:entries.filter(e=>norm(e.artist).includes('jeremy olander')).length});
+  cadence:cadence(entries)});
  return {common,provisional,left:stats(left,a),right:stats(right,b)};
+}
+
+export function comparisonDefaults(sets,leftUrl,initialState={}){
+ const ordered=[...sets].sort((a,b)=>(b.date??'').localeCompare(a.date??'')||a.title.localeCompare(b.title));
+ const left=ordered.find(s=>s.sourceUrl===(initialState?.leftUrl??leftUrl))??ordered[0];
+ const right=ordered.find(s=>s.sourceUrl===initialState?.rightUrl)??ordered.find(s=>s.sourceUrl!==left?.sourceUrl);
+ return {ordered,leftId:left?.sourceUrl,rightId:right?.sourceUrl};
 }

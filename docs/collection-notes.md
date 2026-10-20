@@ -33,10 +33,7 @@ Les noms différents des morceaux restent séparés. Un point d'interrogation fa
 
 Une seule destination, #explorer, rassemble la recherche de morceaux, DJs et sets. La recherche porte sur tout par défaut ; Tout / Morceaux / DJs / Sets filtrent la même liste. Le panneau de droite utilise toujours la même tracklist complète, avec le morceau surligné et centré. Un clic sur un titre conserve son set et permet de poursuivre l’exploration. Les transitions se déplient sous la liste.
 
-- Morceaux → Ses productions : ses crédits de production, avec versions distinctes.
-- Morceaux → Ses sélections : les autres producteurs sélectionnés par le DJ, avec les exclusions et options existantes.
-- DJs → Qui jouent ses morceaux : preuves de soutien et versions exactes ; Répertoire partagé conserve l’autre exploration.
-- Sets : la collection et les enregistrements à identifier, dans le même panneau.
+Tout / Morceaux / DJs / Sets filtrent la même collection. Les noms de DJs proviennent des crédits collectés, sans liste fixe ni DJ de départ. Les anciennes recherches centrées sur un artiste restent des preuves de collecte, pas une limite du produit. L’import/export accepte CSV et JSON pour tout DJ.
 
 Les anciens liens #discover, #sets, #peers et #compare ouvrent leurs équivalents dans cet explorateur. Les filtres, la recherche, le DJ, la version et l’occurrence dans le set sont conservés dans le lien. Comparer deux sets ouvre une section dans le même espace et réutilise les tracklists complètes. L’import/export reste dans Outils.
 

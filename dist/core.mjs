@@ -1,4 +1,3 @@
-export const SEED_DJ = 'Jeremy Olander';
 export const norm = s => String(s ?? '').normalize('NFKC').replace(/[‘’]/g, "'").replace(/\s+/g,' ').trim().toLocaleLowerCase('fr');
 export const searchable = s => norm(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'');
 const nameKey = e => norm(e.artist) + '␟' + norm(e.title);
@@ -43,8 +42,8 @@ export function validateDataset(input) {
       if (timeSeconds !== null && (!Number.isInteger(timeSeconds) || timeSeconds < 0 || timeSeconds > 172800)) fail('repère temporel invalide.');
       const status = unresolved({artist,title:song,status:e.status}) ? 'unresolved' : 'identified';
       const trackId=e.trackId??null;
-      if(trackId && !/^1001:[a-z0-9]{4,}$/.test(trackId)) fail('identifiant de morceau invalide.');
-      return {position:e.position,artist,title:song,timeSeconds,layer,status,trackId,
+      if(trackId!==null && (typeof trackId!=='string'||!/^[a-z0-9][a-z0-9_-]{0,31}:[a-z0-9][a-z0-9._:/+-]{0,255}$/i.test(trackId))) fail('identifiant de morceau invalide.');
+      return {...e,position:e.position,artist,title:song,timeSeconds,layer,status,trackId,
         sourcePosition:String(e.sourcePosition??e.position).slice(0,20),
         breakBefore:e.breakBefore===true,performers:Array.isArray(e.performers)?e.performers.filter(x=>typeof x==='string').slice(0,20):[],
         sourceIdentified:e.sourceIdentified===true,
@@ -62,7 +61,7 @@ export function validateDataset(input) {
     if (date && (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !Number.isFinite(Date.parse(date)) || new Date(date).toISOString().slice(0,10) !== date)) fail('date invalide.');
     const publishedOn = s.publishedOn ?? null;
     if (publishedOn && (!/^\d{4}-\d{2}-\d{2}$/.test(publishedOn) || !Number.isFinite(Date.parse(publishedOn)) || new Date(publishedOn).toISOString().slice(0,10) !== publishedOn)) fail('date de publication invalide.');
-    return {id:sourceUrl,title,djs:[...new Set(s.djs.map(x=>x.trim()))],date,dateType:s.dateType ?? 'source',sourceUrl,
+    return {...s,id:typeof s.id==='string'?s.id.slice(0,600):sourceUrl,title,djs:[...new Set(s.djs.map(x=>x.trim()))],date,dateType:s.dateType ?? 'source',sourceUrl,
       publishedOn,
       mediaUrl:safeUrl(s.mediaUrl),sourceName:String(s.sourceName ?? 'Import personnel').slice(0,200),coverage:'published',
       collectedOn:s.collectedOn ?? input.collectedOn ?? null,entries,
@@ -78,7 +77,7 @@ export function validateDataset(input) {
     const name=nameKey(e);if(!aliases.has(name))aliases.set(name,new Set());aliases.get(name).add(e.trackId);
   }
   for(const s of sets)for(const e of s.entries)if(!e.trackId&&!unresolved(e)&&aliases.get(nameKey(e))?.size===1)e.trackId=[...aliases.get(nameKey(e))][0];
-  const collection=input.collection && Number.isInteger(input.collection.indexedCount)?{
+  const collection=input.collection && Number.isInteger(input.collection.indexedCount)?{...input.collection,
     provider:String(input.collection.provider??'').slice(0,100),profileUrl:safeUrl(input.collection.profileUrl),
     advertisedCount:input.collection.advertisedCount,indexedCount:input.collection.indexedCount,
     importedCount:input.collection.importedCount,indexComplete:input.collection.indexComplete===true,
@@ -89,9 +88,9 @@ export function validateDataset(input) {
     if(typeof r.title!=='string'||!r.title.trim()||r.title.length>400||!Array.isArray(r.djs)||!r.djs.length||r.djs.some(d=>typeof d!=='string'||!d.trim()))throw new Error('Enregistrement sans titre ou DJ.');
     const sourceUrl=safeUrl(r.sourceUrl);if(!sourceUrl)throw new Error('Enregistrement sans source.');
     const checkDate=v=>{if(!v)return null;if(!/^\d{4}-\d{2}-\d{2}$/.test(v)||!Number.isFinite(Date.parse(v))||new Date(v).toISOString().slice(0,10)!==v)throw new Error('Date d’enregistrement invalide.');return v;};
-    return {title:r.title.trim(),djs:[...new Set(r.djs)],sourceUrl,mediaUrl:safeUrl(r.mediaUrl),sourceName:String(r.sourceName??'').slice(0,200),year:Number.isInteger(r.year)?r.year:null,publishedOn:checkDate(r.publishedOn),releasedOn:checkDate(r.releasedOn),tracklistStatus:'unavailable',note:String(r.note??'').slice(0,600)};
+    return {...r,title:r.title.trim(),djs:[...new Set(r.djs)],sourceUrl,mediaUrl:safeUrl(r.mediaUrl),sourceName:String(r.sourceName??'').slice(0,200),year:Number.isInteger(r.year)?r.year:null,publishedOn:checkDate(r.publishedOn),releasedOn:checkDate(r.releasedOn),tracklistStatus:'unavailable',note:String(r.note??'').slice(0,600)};
   });
-  const supportCollection=input.supportCollection?{
+  const supportCollection=input.supportCollection?{...input.supportCollection,
     profileUrl:safeUrl(input.supportCollection.profileUrl),
     sourceCounterLabel:String(input.supportCollection.sourceCounterLabel??'').slice(0,50),
     listedCount:Math.max(0,Number(input.supportCollection.listedCount)||0),
@@ -100,7 +99,13 @@ export function validateDataset(input) {
     sampleOnly:true,sampleComplete:input.supportCollection.sampleComplete===true,
     collectedOn:String(input.supportCollection.collectedOn??'').slice(0,10)
   }:null;
-  return {schemaVersion:1,seedDj:SEED_DJ,collectedOn:input.collectedOn ?? null,sets,collection,recordings,supportCollection};
+  if(input.artists!=null&&(!Array.isArray(input.artists)||input.artists.length>1000))throw new Error('Invalid artist aliases.');
+  const artists=(input.artists??[]).map(artist=>{
+    if(!artist||typeof artist!=='object'||typeof artist.name!=='string'||!artist.name.trim()||artist.name.length>200||!Array.isArray(artist.aliases??[])||(artist.aliases??[]).some(a=>typeof a!=='string'||!a.trim()||a.length>200))throw new Error('Invalid artist aliases.');
+    return {...artist,name:artist.name.trim(),aliases:[...new Set((artist.aliases??[]).map(a=>a.trim()))]};
+  });
+  const {seedDj:legacySeed,...metadata}=input;
+  return {...metadata,schemaVersion:1,artists,collectedOn:input.collectedOn ?? null,sets,collection,recordings,supportCollection};
 }
 export function mergeDatasets(existing, incoming) {
   const map = new Map(existing.sets.map(s=>[s.sourceUrl,s]));
@@ -115,21 +120,28 @@ export function mergeDatasets(existing, incoming) {
   if (map.size > 1000 || [...map.values()].reduce((n,s)=>n+s.entries.length,0)>20000) throw new Error('La taille totale dépasse les limites du prototype.');
   const recordings=new Map((existing.recordings??[]).map(r=>[r.sourceUrl,r]));
   for(const r of incoming.recordings??[])recordings.set(r.sourceUrl,r);
-  return {dataset:validateDataset({...existing,sets:[...map.values()],recordings:[...recordings.values()]}),added,updated};
+  const artists=new Map((existing.artists??[]).map(a=>[norm(a.name),a]));
+  for(const a of incoming.artists??[]){const prior=artists.get(norm(a.name));artists.set(norm(a.name),{...prior,...a,name:a.name,aliases:[...new Set([...(prior?.aliases??[]),...a.aliases])]});}
+  const metadata={...existing,...Object.fromEntries(Object.entries(incoming).filter(([key,value])=>!['sets','recordings','artists','artistCollections'].includes(key)&&value!==null))};
+  const collections=new Map();
+  for(const c of [...(existing.artistCollections??[]),...(incoming.artistCollections??[])])collections.set(c.profileUrl??JSON.stringify(c),c);
+  if(collections.size)metadata.artistCollections=[...collections.values()];
+  return {dataset:validateDataset({...metadata,artists:[...artists.values()],sets:[...map.values()],recordings:[...recordings.values()]}),added,updated};
 }
 export function restoreCollection(seed, saved) {
   // Browser storage includes an older copy of the bundled sources as well as
   // personal imports. Refresh official sources while retaining personal URLs.
   const merged=mergeDatasets(saved,seed).dataset;
-  return {...seed,sets:merged.sets,recordings:merged.recordings};
+  return {...seed,artists:merged.artists,sets:merged.sets,recordings:merged.recordings};
 }
-export const seedSets = (data,dj=SEED_DJ) => data.sets.filter(s=>s.djs.some(d=>norm(d)===norm(dj))).flatMap(s=>{
+export const artistSets = (data,dj=null) => !dj ? data.sets : data.sets.filter(s=>s.djs.some(d=>norm(d)===norm(dj))).flatMap(s=>{
   const entries=s.entries.filter(e=>!e.performers?.length||e.performers.some(d=>norm(d)===norm(dj)));
   if(!entries.length)return [];
   if(entries.length===s.entries.length)return [s];
   return [{...s,entries,scopeNote:`Seules les positions explicitement attribuées à ${dj} sont affichées. Les passages partagés restent collectifs.`}];
 });
-export function corpus(data, expanded, dj=SEED_DJ) {
+export const seedSets=artistSets; // Compatibility for existing collector consumers.
+export function corpus(data, expanded, dj=null) {
   const base = seedSets(data,dj), baseUrls = new Set(base.map(s=>s.sourceUrl));
   if (!expanded) return base;
   const keys = new Set(base.flatMap(s=>s.entries.filter(e=>!unresolved(e)).map(trackKey)));
@@ -178,8 +190,9 @@ export function occurrences(sets,id) {
   }
   return result.sort((a,b)=>(b.set.date ?? '').localeCompare(a.set.date ?? ''));
 }
-export function sharedRepertoire(data, focusDj=SEED_DJ) {
-  const base = seedSets(data,focusDj);
+export function sharedRepertoire(data, focusDj=null) {
+  if(!focusDj)return [];
+  const base = artistSets(data,focusDj);
   const baseKeys = new Set(base.flatMap(s=>s.entries.filter(e=>!unresolved(e)).map(trackKey)));
   const all = catalog(data.sets), tracks = new Map(all.map(t=>[t.id,t]));
   const peers = new Map();

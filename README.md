@@ -2,7 +2,7 @@
 
 Explore music through published DJ tracklists: find who played a track, see its full set in order, and inspect the tracks before and after it. All / Tracks / DJs / Sets filter the same global collection. Includes search, copy artist/title, source and listening links, transition graphs, set comparison, English (default), French and Korean, and light/dark themes. Use the small appearance icon beside the language flag to switch themes; the first visit follows your device setting and subsequent choices are remembered.
 
-The current bundled collection contains **436 tracklists, 3,316 identified track identities, 4,679 distinct transitions and 2 recordings awaiting tracklists**. It starts with Jeremy Olander and includes supporting DJs, Mattheis, Fahlberg, Layer J, CVMRN, Danny Howells, and producers played by Olander. These are collected sources, not a complete record of every performance. Details: [collection notes](docs/collection-notes.md).
+The current bundled collection contains **436 tracklists, 3,316 identified track identities, 4,679 distinct transitions and 2 recordings awaiting tracklists**. It includes Jeremy Olander, Mattheis, Fahlberg, Layer J, CVMRN, Danny Howells and other collected DJs. Any DJ can be added through the same import flow; none is the application’s default or required starting point. These are collected sources, not a complete record of every performance. Details: [collection notes](docs/collection-notes.md).
 
 ## Run locally
 
@@ -38,17 +38,17 @@ Official references: [GitHub Pages setup](https://docs.github.com/en/get-started
 
 ## Update the public setlists
 
-**The public source of truth is `dist/dataset.json`.** GitHub generates the browser data module and asset versions from it during deployment. Committing raw snapshots alone does not update the public graph.
+**The public source of truth is `dist/dataset.json`.** The browser fetches it once as JSON. The small generated loader and asset versions keep caches current; music data is no longer duplicated in JavaScript. Committing raw snapshots alone does not update the public graph.
 
 To publish additions made in your browser:
 
-1. Use **Tools → Import / export → Export my collection**.
-2. Review the exported JSON; all included setlists will be public after you commit them.
+1. Use **Tools → Import / export → Export CSV** (or **JSON backup**).
+2. Review the exported CSV or JSON; all included setlists will be public after you commit them.
 3. Merge it into the bundled collection from Terminal:
 
    ```sh
-   npm run import-setlists -- /path/to/mix-atlas-collection.json --dry-run
-   npm run import-setlists -- /path/to/mix-atlas-collection.json
+   npm run import-setlists -- /path/to/mix-atlas-collection.csv --dry-run
+   npm run import-setlists -- /path/to/mix-atlas-collection.csv
    npm test
    ```
 
@@ -63,7 +63,7 @@ To publish additions made in your browser:
 
 You can also edit `dist/dataset.json` directly and push it; GitHub regenerates the site automatically. To preview a manual dataset or code change locally first, run `npm run prepare-site`.
 
-Imports made by a visitor remain in that browser only. They cannot change the public website. Browser storage is specific to the device and website address: export your local collection before moving to a GitHub Pages URL, then import it there. English/French/Korean preferences are stored separately from the collection.
+Imports made by a visitor remain in that browser only. They cannot change the public website. Browser storage is specific to the device and website address: export your local collection before moving to a GitHub Pages URL, then import it there. English/French/Korean and appearance preferences are stored separately from the collection. Previous browser collection/language keys are read automatically; new writes use Mix Atlas names.
 
 ## Verify changes
 
@@ -85,3 +85,13 @@ Unknown tracks and missing positions never create inferred transitions. Remixes 
 The app has no account system, analytics or collection-upload endpoint. Imports and language preferences use browser storage. The stylesheet requests DM Sans from Google Fonts; listening and source links open external services. Collector scripts are offline builders except the older `collector/collect.py` prototype; there is no scheduled collection or automatic CAPTCHA handling.
 
 This release excludes private hosting configuration, repository history, browser snapshots, local credentials and internal audit files. The collector builders and parsed input datasets remain available for maintenance; rebuilding raw collection stages requires your own snapshots. See [release review](docs/release-review.md) for completed checks and remaining verification limits.
+
+## Data architecture
+
+`dist/dataset.json` is the canonical nested collection. It preserves source metadata, recordings without tracklists, performer sections and overlays, so a database server is unnecessary for this static GitHub Pages site. `dist/data.mjs` is only a small fetch loader. `prepare-site` fingerprints the JSON and all module dependencies; a failed fetch offers a Retry action.
+
+`dist/collection-format.mjs` provides CSV import/export shared by the browser and the publishing command. The CSV is a spreadsheet interchange format, not a second maintained copy of the collection. Full JSON backups remain available. See [CSV format](docs/csv-format.md) for a six-column minimal example and lossless metadata rules.
+
+Artists are derived from collected credits; there is no fixed DJ list. Optional `artists` metadata configures real aliases, for example `{ "name": "Artist", "aliases": ["Other name"] }`. Discovery helpers require an explicit artist when an artist-specific question is asked; the normal workspace covers the whole collection. Stable track IDs may use provider namespaces such as `1001:…` or `custom:…`. Comparison defaults to recent distinct sources and respects the set opened by the user.
+
+Historical research collectors retain their source-specific coverage rules. They now call the same preparation step and do not rewrite runtime artist rules or embed the dataset in JavaScript. Adding unrelated artists should normally use `import-setlists` with CSV or JSON.

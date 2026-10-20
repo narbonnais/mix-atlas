@@ -4,6 +4,7 @@
 No credentials, proxy rotation, CAPTCHA handling, or background crawling.
 """
 import argparse
+from publish import prepare_site
 import hashlib
 import html
 import json
@@ -152,12 +153,12 @@ def main():
             sc = re.search(r"api\.soundcloud\.com/playlists/(\d+)", page)
             item["mediaUrl"] = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/" + sc[1] if sc else None
         sets.append(item)
-    dataset = {"schemaVersion": 1, "seedDj": "Jeremy Olander", "collectedOn": args.collected_on,
+    dataset = {"schemaVersion": 1, "artists": json.loads((ROOT / "dist/dataset.json").read_text()).get("artists", []), "collectedOn": args.collected_on,
                "coverage": "Échantillon de tracklists publiées ; aucune exhaustivité annoncée.",
                "sets": sets}
     serialized = json.dumps(dataset, ensure_ascii=False, indent=2)
     (ROOT / "dist/dataset.json").write_text(serialized + "\n")
-    (ROOT / "dist/data.mjs").write_text("export const SEED = " + serialized + ";\n")
+    prepare_site(ROOT)
     print(json.dumps({"sets": len(sets), "entries": sum(len(s["entries"]) for s in sets)}))
 
 

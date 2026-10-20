@@ -1,6 +1,5 @@
 {
   "schemaVersion": 1,
-  "seedDj": "Jeremy Olander",
   "collectedOn": "2026-10-18",
   "collection": {
     "provider": "1001Tracklists",
@@ -146666,5 +146665,13 @@
         "recentSources": 5
       }
     ]
-  }
+  },
+  "artists": [
+    {
+      "name": "Jeremy Olander",
+      "aliases": [
+        "Dhillon"
+      ]
+    }
+  ]
 }

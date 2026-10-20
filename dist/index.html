@@ -15,7 +15,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Mix Atlas">
   <meta name="twitter:description" content="Discover tracks through DJ sets. Explore tracklists, find who played a track, and see what came before and after.">
-  <link rel="icon" href="icon.svg?v=f8cf39bea03d" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=01ad8ebff4e9">
+  <link rel="icon" href="icon.svg?v=f8cf39bea03d" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=f51851140c57">
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="Aller au contenu">Skip to content</a>
@@ -47,9 +47,10 @@
       <p class="form-help" data-i18n="Garde les IDs et les numéros d’origine. Les lignes « w/ » sont conservées comme superpositions.">Keep IDs and original position numbers. Lines starting with “w/” are retained as overlays.</p>
       <div class="form-error" id="paste-error" role="alert"></div><button class="button primary" type="submit"><span data-i18n="Ajouter à ma collection">Add to my collection</span> <svg class="ui-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10"/></svg></button>
     </form>
-    <div id="json-panel" hidden><p data-i18n="Importe une collection exportée depuis cet outil. Les sets déjà présents seront mis à jour.">Import a collection exported from this tool. Existing sets will be updated.</p><label class="file-label"><span data-i18n="Choisir un fichier .json">Choose a .json file</span><input type="file" id="file-input" accept=".json,application/json"></label><div class="form-error" id="file-error" role="alert"></div><button class="button outline" id="download-format" data-i18n="Télécharger le format d’import">Download import template</button></div>
+    <div id="json-panel" hidden><p data-i18n="Importe une collection exportée depuis cet outil. Les sets déjà présents seront mis à jour.">Import a collection exported from this tool. Existing sets will be updated.</p><label class="file-label"><span data-i18n="Choisir un fichier CSV ou JSON">Choose a CSV or JSON file</span><input type="file" id="file-input" accept=".csv,text/csv,.json,application/json"></label><div class="form-error" id="file-error" role="alert"></div><button class="button outline" id="download-format" data-i18n="Télécharger un modèle CSV">Download CSV template</button></div>
     <div class="dialog-note"><strong data-i18n="Les IDs et les versions sont conservés.">IDs and versions are preserved.</strong> <span data-i18n="import.note">Existing sources will be updated. Suggested but unconfirmed identifications on 1001Tracklists do not create links.</span><br><span data-i18n="Les ajouts sont enregistrés uniquement dans ce navigateur.">Additions are saved only in this browser.</span></div>
-    <button class="text-button" id="export"><span data-i18n="Exporter toute ma collection">Export my collection</span> <svg class="ui-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v13m-5-5 5 5 5-5"/></svg></button>
+    <div class="collection-exports"><button class="text-button" id="export"><span data-i18n="Exporter en CSV">Export CSV</span> <svg class="ui-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v13m-5-5 5 5 5-5"/></svg></button>
+    <button class="text-button" id="export-json" data-i18n="Sauvegarde JSON">JSON backup</button></div>
   </dialog>
-  <script type="module" src="app.mjs?v=c7baacf6d7a1"></script>
+  <script type="module" src="app.mjs?v=173849de97ef"></script>
 </body></html>

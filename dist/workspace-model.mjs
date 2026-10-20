@@ -1,10 +1,10 @@
-import {catalog,corpus,seedSets,occurrences,trackKey,unresolved,norm,searchable,sharedRepertoire} from './core.mjs?v=f639e478edea';
-import {otherSelections,supportingDjs,trackRole} from './discover.mjs?v=88134b6dceb7';
+import {catalog,corpus,artistSets,occurrences,trackKey,unresolved,norm,searchable,sharedRepertoire} from './core.mjs?v=17a220c19fc2';
+import {otherSelections,supportingDjs,trackRole} from './discover.mjs?v=85d58153ea2c';
 
 export function workspaceSources(data,dj,expanded=true){
- if(!expanded)return seedSets(data,dj);
+ if(!expanded)return artistSets(data,dj);
  const related=new Set(corpus(data,true,dj).map(s=>s.sourceUrl));
- return data.sets.filter(s=>related.has(s.sourceUrl)||s.entries.some(e=>['production','rework'].includes(trackRole(e,dj))));
+ return data.sets.filter(s=>related.has(s.sourceUrl)||s.entries.some(e=>['production','rework'].includes(trackRole(e,dj,data.artists))));
 }
 
 // The unfiltered collection must remain reachable without a header DJ picker.
@@ -20,7 +20,8 @@ function collectionDjs(data){
  return [...groups.values()].map(group=>({id:group.performers.map(norm).sort().join('␟'),title:group.title,artist:[...group.tracks.values()].slice(0,3).map(t=>t.title).join(' · '),kind:'dj',performers:group.performers,joint:group.performers.length>1,setCount:group.sources.size,tracks:[...group.tracks.values()],sourceUrls:[...group.sources]}));
 }
 
-export function workspaceItems(data,dj,state){
+export function workspaceItems(data,dj=null,state={}){
+ if(!dj)state={...state,allSources:true};
  const {type='all',scope='all',expanded=true,reworks=false,joint=false,relation='supporters'}=state;
  if(type==='all')return [...workspaceItems(data,dj,{...state,type:'tracks',scope:'all',allSources:true}),...collectionDjs(data),...workspaceItems(data,dj,{...state,type:'sets',allSources:true})];
  if(type==='djs'){
@@ -38,12 +39,13 @@ export function workspaceItems(data,dj,state){
   return [...sets,...recordings].sort((a,b)=>(b.date??'').localeCompare(a.date??''));
  }
  const tracks=scope==='external'?otherSelections(data,dj,{includeReworks:reworks,includeJoint:joint})
-  :catalog(state.allSources||scope==='productions'?data.sets:workspaceSources(data,dj,expanded)).filter(t=>scope!=='productions'||trackRole(t,dj)==='production'||(reworks&&trackRole(t,dj)==='rework'));
+  :catalog(state.allSources||scope==='productions'?data.sets:workspaceSources(data,dj,expanded)).filter(t=>scope!=='productions'||trackRole(t,dj,data.artists)==='production'||(reworks&&trackRole(t,dj,data.artists)==='rework'));
  const dates=new Map(data.sets.map(s=>[s.sourceUrl,s.date??'']));
  return tracks.map(track=>({...track,kind:'track',date:[...(track.sets??[])].reduce((latest,url)=>dates.get(url)>latest?dates.get(url):latest,'')}));
 }
 
 export function workspaceEvidence(data,dj,item,state){
+ if(!dj)state={...state,allSources:true};
  if(item.evidence)return item.evidence;
  if(item.kind==='recording')return [];
  const original=new Map(data.sets.map(s=>[s.sourceUrl,s]));

@@ -61,3 +61,5 @@ dialog{width:min(640px,calc(100vw - 32px));max-height:90dvh;overflow:auto;paddin
 @media(max-width:720px){.atlas-header{gap:8px}}
 
 .theme-button[aria-pressed="true"]{background:var(--raised)}
+
+.collection-exports{display:flex;flex-wrap:wrap;gap:16px}

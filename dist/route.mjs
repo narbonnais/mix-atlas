@@ -1,13 +1,13 @@
 const views=new Set(['explorer','discover','sets','compare','peers']);
-export const FOCUS_DJS = ["Jeremy Olander", "Mattheis", "Fahlberg", "Aera", "Agustin Giri", "Applescal", "Arno Cost", "Axwell", "Butch", "Eric Prydz", "Guy J", "Jerry Ropero", "M-High", "Martinou", "Nuno Dos Santos", "OLING", "Pig&Dan", "Priori", "Pryda", "Ryan Elliott", "Sebra Cruz", "Sébastien Léger", "Tim Engelhardt", "Layer J", "CVMRN"];
+const artistName=value=>typeof value==='string'&&value.trim()&&value.length<=200&&!/[\u0000-\u001f]/.test(value)?value.trim():null;
 export function parseRoute(hash=''){
  const [name,query]=hash.replace(/^#/,'').split('?'),params=new URLSearchParams(query);
- return {view:views.has(name)?name:'explorer',mode:params.get('mode')==='external'?'external':'supporters',dj:FOCUS_DJS.includes(params.get('dj'))?params.get('dj'):'Jeremy Olander',track:params.get('track')||null,expanded:params.get('linked')==='1'};
+ return {view:views.has(name)?name:'explorer',mode:params.get('mode')==='external'?'external':'supporters',dj:artistName(params.get('dj')),track:params.get('track')||null,expanded:params.get('linked')==='1'};
 }
-export function formatRoute({view='explorer',mode='supporters',dj='Jeremy Olander',track=null,expanded=false}={}){
+export function formatRoute({view='explorer',mode='supporters',dj=null,track=null,expanded=false}={}){
  const params=new URLSearchParams();
  if(view==='discover')params.set('mode',mode);
- if(dj!=='Jeremy Olander')params.set('dj',dj);
+ if(artistName(dj))params.set('dj',dj);
  if(track&&view==='explorer')params.set('track',track);
  if(expanded)params.set('linked','1');
  return '#'+view+(params.size?'?'+params.toString():'');
@@ -19,7 +19,7 @@ export function parseWorkspaceRoute(hash=''){
  const type=['all','tracks','djs','sets'].includes(p.get('type'))?p.get('type'):legacyType;
  const scope=['all','productions','external'].includes(p.get('scope'))?p.get('scope'):name==='discover'&&p.get('mode')==='external'?'external':'all';
  const position=Number(p.get('position'));
- return {type,scope,dj:FOCUS_DJS.includes(p.get('dj'))?p.get('dj'):'Jeremy Olander',query:p.get('q')??'',
+ return {type,scope,dj:artistName(p.get('dj')),query:p.get('q')??'',
   track:p.get('track')||null,item:p.get('item')||null,set:p.get('set')||null,
   position:Number.isInteger(position)&&position>0?position:null,layer:p.get('layer')==='overlay'?'overlay':'main',
   player:p.get('player')??'',expanded:p.get('linked')==='1'||(name!=='sets'&&p.get('linked')!=='0'),reworks:p.get('reworks')==='1',joint:p.get('joint')==='1',
@@ -31,7 +31,7 @@ export function formatWorkspaceRoute(state){
  const p=new URLSearchParams();
  if(state.type!=='all')p.set('type',state.type);
  if(state.scope!=='all')p.set('scope',state.scope);
- if(state.dj!=='Jeremy Olander')p.set('dj',state.dj);
+ if(artistName(state.dj))p.set('dj',state.dj);
  if(state.query)p.set('q',state.query);
  if(state.track)p.set('track',state.track);
  if(state.item&&state.type!=='tracks')p.set('item',state.item);

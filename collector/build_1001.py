@@ -3,7 +3,7 @@
 No HTTP requests, cookies, tokens, or hidden application state are used here.
 """
 import argparse
-import hashlib
+from publish import prepare_site
 import json
 import re
 from pathlib import Path
@@ -164,7 +164,7 @@ def main():
     original = json.loads((ROOT / 'collector/initial-dataset.json').read_text())
     mirrors = {url for s in imported for url in s['sourceAliases']}
     retained = [s for s in original['sets'] if s['sourceUrl'] not in mirrors]
-    dataset = {'schemaVersion':1, 'seedDj':'Jeremy Olander', 'collectedOn':index['collectedOn'],
+    dataset = {'schemaVersion':1, 'artists':json.loads((ROOT / 'dist/dataset.json').read_text()).get('artists', []), 'collectedOn':index['collectedOn'],
                'collection':{'provider':'1001Tracklists','profileUrl':index['profileUrl'],
                              'advertisedCount':index['advertisedCount'], 'indexedCount':len(index['sets']),
                              'importedCount':len(imported), 'indexComplete':index['listComplete'],
@@ -192,12 +192,7 @@ def main():
         dataset['supportCollection'] = supports.get('supportCollection')
     serialized = json.dumps(dataset, ensure_ascii=False, indent=2)
     (ROOT / 'dist/dataset.json').write_text(serialized+'\n')
-    (ROOT / 'dist/data.mjs').write_text('export const SEED = '+serialized+';\n')
-    # Browsers can keep the large data module fresh in cache across revisions.
-    # Change its URL whenever its contents change, without altering user storage.
-    app = ROOT / 'dist/app.mjs'
-    digest = hashlib.sha256(serialized.encode()).hexdigest()[:12]
-    app.write_text(re.sub(r"from './data\.mjs(?:\?v=[a-z0-9-]+)?'", f"from './data.mjs?v={digest}'", app.read_text()))
+    prepare_site(ROOT)
     print(json.dumps({'imported':len(imported),'expected':len(index['sets']),
                       'rows':sum(len(s['entries']) for s in imported),
                       'excludedOtherDjRows':sum(s['excludedOtherDjRows'] for s in imported)}))

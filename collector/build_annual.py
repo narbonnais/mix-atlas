@@ -5,7 +5,7 @@ The selected producers' mixes keep their full published sequences, including
 remixes; eligibility is a producer filter, never a filter on sequence rows.
 """
 import argparse
-import hashlib
+from publish import prepare_site
 import json
 import re
 from pathlib import Path
@@ -93,19 +93,11 @@ def main():
     data['producerCollection'] = coverage
     serialized = json.dumps(data, ensure_ascii=False, indent=2)
     data_path.write_text(serialized + '\n')
-    available={p['title'].replace('Tracklists By ', '') for p in profiles if any(FROM <= (s.get('date') or '') <= THROUGH and s['sourceUrl'] in reconciled for s in p.get('items', []))}
-    available.update(s['djs'][0] for s in incoming if len(s['djs']) == 1 and s['djs'][0] != 'Jeremy Olander')
-    djs=['Jeremy Olander','Mattheis','Fahlberg']+sorted(available-{'Jeremy Olander','Mattheis','Fahlberg'})
-    route=ROOT/'dist/route.mjs'
-    route.write_text(re.sub(r'export const FOCUS_DJS = \[.*?\];', 'export const FOCUS_DJS = '+json.dumps(djs,ensure_ascii=False)+';', route.read_text()))
-    (ROOT / 'dist/data.mjs').write_text('export const SEED = ' + serialized + ';\n')
     (ROOT / 'collector/annual-dataset.json').write_text(json.dumps({
         'schemaVersion': 1, 'collectedOn': THROUGH, 'sets': incoming,
         'replaceExistingSources': True, 'producerCollection': coverage}, ensure_ascii=False, indent=2) + '\n')
     (ROOT / 'collector/annual-coverage.json').write_text(json.dumps(coverage, ensure_ascii=False, indent=2) + '\n')
-    app = ROOT / 'dist/app.mjs'
-    digest = hashlib.sha256(serialized.encode()).hexdigest()[:12]
-    app.write_text(re.sub(r"from './data\.mjs(?:\?v=[a-z0-9-]+)?'", f"from './data.mjs?v={digest}'", app.read_text()))
+    prepare_site(ROOT)
     print(json.dumps({'incoming': len(incoming), 'newSets': len(sets.keys() - before.keys()),
                       'totalSets': len(sets), 'pending': len(coverage['pendingSources'])}))
 

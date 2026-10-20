@@ -1,5 +1,5 @@
-import {t,count} from './i18n.mjs?v=d748e838fa62';
-import {trackCopyButton} from "./copy-track.mjs?v=522cda602a41";
+import {t,count} from './i18n.mjs?v=9ce790547f41';
+import {trackCopyButton} from "./copy-track.mjs?v=350a954c381e";
 const esc=value=>String(value??'').replace(/[&<>"\']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const plur=(n,word)=>count(word==='DJ'?'players':'sets',n);
 export function drawGraph(box,song,incoming,outgoing,hits,onTrack){
